@@ -41,6 +41,13 @@
 //}
 
 @media only screen
+and (max-width : 991px) {
+  section.light-section h2:after {
+    left: 44%;
+  }
+}
+
+@media only screen
 and (max-width : 950px) {
   header {
     .main-menu_nav {
@@ -104,6 +111,33 @@ and (max-width : 600px) {
     h1 {
       font-size: 26px;
       padding-bottom: 25px;
+    }
+  }
+  section.light-section h2:after {
+    left: 43%;
+  }
+}
+
+@media only screen
+and (max-width : 444px) {
+  header {
+    .main-menu_nav {
+      width: 48%;
+    }
+  }
+  section.light-section h2 {
+    font-size: 26px;
+    &:after {
+      left: 41%;
+    }
+  }
+}
+
+@media only screen
+and (max-width : 370px) {
+  header {
+    .main-menu_nav {
+      width: 56%;
     }
   }
 }

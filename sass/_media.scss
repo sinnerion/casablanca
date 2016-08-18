@@ -1,0 +1,121 @@
+///* Smartphones (portrait and landscape) ----------- */
+//@media only screen
+//and (min-device-width : 320px)
+//and (max-device-width : 480px) {
+//  /* Styles */
+//}
+//
+///* Smartphones (landscape) ----------- */
+//@media only screen
+//and (min-width : 321px) {
+//  /* Styles */
+//}
+//
+///* Smartphones (portrait) ----------- */
+//@media only screen
+//and (max-width : 320px) {
+//  /* Styles */
+//}
+
+///* iPads (portrait and landscape) ----------- */
+//@media only screen
+//and (min-device-width : 768px)
+//and (max-device-width : 1024px) {
+//  /* Styles */
+//}
+//
+///* iPads (landscape) ----------- */
+//@media only screen
+//and (min-device-width : 768px)
+//and (max-device-width : 1024px)
+//and (orientation : landscape) {
+//  /* Styles */
+//}
+//
+///* iPads (portrait) ----------- */
+//@media only screen
+//and (min-device-width : 768px)
+//and (max-device-width : 1024px)
+//and (orientation : portrait) {
+//  /* Styles */
+//}
+
+@media only screen
+and (max-width : 950px) {
+  header {
+    .main-menu_nav {
+      width: 70%;
+      li {
+        margin-bottom: 5px;
+      }
+    }
+  }
+}
+
+@media only screen
+and (max-width : 900px) {
+  header {
+    .main-menu {
+      margin-bottom: 180px;
+      &_btn {
+        left: 49%;
+      }
+      &_nav {
+        margin: 0 auto;
+        left: 3%;
+        top: 105px;
+        transition: opacity .3s;
+      }
+      .nav-hidden {
+        left: 3%;
+        transition: opacity .7s;
+      }
+    }
+    h1 {
+      font-size: 40px;
+      margin-bottom: 30px;
+    }
+    .header-description {
+      font-size: 18px;
+      width: 66%;
+    }
+  }
+}
+
+@media only screen
+and (max-width : 840px) {
+  header {
+    .main-menu_nav {
+      width: 40%;
+      margin-bottom: -35px;
+      a {
+        font-size: 14px;
+      }
+    }
+    h1:after {
+      left: 42%;
+    }
+  }
+}
+
+@media only screen
+and (max-width : 600px) {
+  header {
+    h1 {
+      font-size: 26px;
+      padding-bottom: 25px;
+    }
+  }
+}
+
+/* Desktops and laptops ----------- */
+@media only screen
+and (min-width : 1224px) {
+  /* Styles */
+}
+
+/* Large screens ----------- */
+@media only screen
+and (min-width : 1824px) {
+  /* Styles */
+}

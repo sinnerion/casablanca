@@ -18,6 +18,38 @@ section {
 section.light-section {
   padding: 120px 0;
   background: #fff;
+  &.gray-section {
+    background: $gray-bg;
+    ul {
+      display: block;
+    }
+    li {
+      padding: 0 20px;
+      width: 20%;
+      margin: 0;
+      font-size: 36px;
+    }
+    a {
+      width: 100%;
+      height: 50px;
+      background: url("../img/clients.png")no-repeat;
+      &.ggl {
+        background-position: 0px 0px;
+      }
+      &.sams {
+        background-position: -240px 0px;
+      }
+      &.flick {
+        background-position: -475px 0px;
+      }
+      &.frsq {
+        background-position: -718px 0px;
+      }
+      &.pint {
+        background-position: -988px 0px;
+      }
+    }
+  }
   h2 {
     font-size: 30px;
     font-family: "BigJohn", sans-serif;
@@ -76,6 +108,7 @@ section.light-section {
     width: 55%;
   }
 }
+
 section.dark-section {
   padding: 200px 0;
   .section-btn {

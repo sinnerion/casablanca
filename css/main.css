@@ -152,65 +152,64 @@ header h1:after {
 /* line 4, ../sass/_sections.scss */
 section .section-btn {
   font-family: "AmbleBold", sans-serif;
-  display: block;
   background: transparent;
   text-align: center;
   margin: 0 auto;
   border: 3px solid;
   transition: padding, .2s;
 }
-/* line 12, ../sass/_sections.scss */
+/* line 11, ../sass/_sections.scss */
 section .section-btn:hover {
   transition: padding, .3s;
 }
 
-/* line 18, ../sass/_sections.scss */
+/* line 17, ../sass/_sections.scss */
 section.light-section {
   padding: 120px 0;
   background: #fff;
 }
-/* line 21, ../sass/_sections.scss */
+/* line 20, ../sass/_sections.scss */
 section.light-section.gray-section {
   background: #f4f4f4;
 }
-/* line 23, ../sass/_sections.scss */
+/* line 22, ../sass/_sections.scss */
 section.light-section.gray-section ul {
   display: block;
 }
-/* line 26, ../sass/_sections.scss */
+/* line 25, ../sass/_sections.scss */
 section.light-section.gray-section li {
   padding: 0 20px;
   width: 20%;
   margin: 0;
   font-size: 36px;
 }
-/* line 32, ../sass/_sections.scss */
+/* line 31, ../sass/_sections.scss */
 section.light-section.gray-section a {
   width: 100%;
   height: 50px;
   background: url("../img/clients.png") no-repeat;
 }
-/* line 36, ../sass/_sections.scss */
+/* line 35, ../sass/_sections.scss */
 section.light-section.gray-section a.ggl {
   background-position: 0px 0px;
 }
-/* line 39, ../sass/_sections.scss */
+/* line 38, ../sass/_sections.scss */
 section.light-section.gray-section a.sams {
   background-position: -240px 0px;
 }
-/* line 42, ../sass/_sections.scss */
+/* line 41, ../sass/_sections.scss */
 section.light-section.gray-section a.flick {
   background-position: -475px 0px;
 }
-/* line 45, ../sass/_sections.scss */
+/* line 44, ../sass/_sections.scss */
 section.light-section.gray-section a.frsq {
   background-position: -718px 0px;
 }
-/* line 48, ../sass/_sections.scss */
+/* line 47, ../sass/_sections.scss */
 section.light-section.gray-section a.pint {
   background-position: -988px 0px;
 }
-/* line 53, ../sass/_sections.scss */
+/* line 52, ../sass/_sections.scss */
 section.light-section h2 {
   font-size: 30px;
   font-family: "BigJohn", sans-serif;
@@ -221,7 +220,7 @@ section.light-section h2 {
   text-transform: uppercase;
   padding-bottom: 70px;
 }
-/* line 62, ../sass/_sections.scss */
+/* line 61, ../sass/_sections.scss */
 section.light-section h2:after {
   display: block;
   content: "";
@@ -232,23 +231,23 @@ section.light-section h2:after {
   bottom: 0;
   background: #222;
 }
-/* line 73, ../sass/_sections.scss */
+/* line 72, ../sass/_sections.scss */
 section.light-section nav {
   margin: 0 0 85px;
 }
-/* line 75, ../sass/_sections.scss */
+/* line 74, ../sass/_sections.scss */
 section.light-section nav ul {
   margin: 0 auto;
 }
-/* line 78, ../sass/_sections.scss */
+/* line 77, ../sass/_sections.scss */
 section.light-section nav li {
   margin-right: 30px;
 }
-/* line 80, ../sass/_sections.scss */
+/* line 79, ../sass/_sections.scss */
 section.light-section nav li li:last-child {
   margin-right: 0;
 }
-/* line 84, ../sass/_sections.scss */
+/* line 83, ../sass/_sections.scss */
 section.light-section nav button {
   background: transparent;
   border: none;
@@ -259,7 +258,7 @@ section.light-section nav button {
   color: #222;
   text-transform: uppercase;
 }
-/* line 94, ../sass/_sections.scss */
+/* line 93, ../sass/_sections.scss */
 section.light-section nav button:hover,
 section.light-section nav button:focus,
 section.light-section nav button.active-button {
@@ -267,7 +266,7 @@ section.light-section nav button.active-button {
   text-decoration: none;
   font-weight: bold;
 }
-/* line 102, ../sass/_sections.scss */
+/* line 101, ../sass/_sections.scss */
 section.light-section .section-description {
   font-size: 22px;
   text-align: center;
@@ -277,8 +276,9 @@ section.light-section .section-description {
   width: 55%;
 }
 
-/* line 112, ../sass/_sections.scss */
+/* line 111, ../sass/_sections.scss */
 section.dark-section {
+  text-align: center;
   padding: 200px 0;
 }
 /* line 114, ../sass/_sections.scss */
@@ -297,10 +297,18 @@ section.dark-section .section-btn:hover {
   padding: 0 70px;
 }
 /* line 127, ../sass/_sections.scss */
+section.dark-section.video-section {
+  padding: 0;
+}
+/* line 129, ../sass/_sections.scss */
+section.dark-section.video-section iframe {
+  width: 100%;
+}
+/* line 133, ../sass/_sections.scss */
 section.dark-section.section-2, section.dark-section.section-4, section.dark-section.section-9 {
   position: relative;
 }
-/* line 131, ../sass/_sections.scss */
+/* line 137, ../sass/_sections.scss */
 section.dark-section.section-2:after, section.dark-section.section-4:after, section.dark-section.section-9:after {
   content: "";
   display: block;
@@ -312,15 +320,15 @@ section.dark-section.section-2:after, section.dark-section.section-4:after, sect
   background: rgba(34, 34, 34, 0.6);
   z-index: 2;
 }
-/* line 143, ../sass/_sections.scss */
+/* line 149, ../sass/_sections.scss */
 section.dark-section.section-2 {
   background: url("../img/section-bg-2.png") center center no-repeat;
 }
-/* line 146, ../sass/_sections.scss */
+/* line 152, ../sass/_sections.scss */
 section.dark-section.section-4 {
   background: url("../img/section-bg-4.png") center center no-repeat;
 }
-/* line 149, ../sass/_sections.scss */
+/* line 155, ../sass/_sections.scss */
 section.dark-section.section-9 {
   background: url("../img/section-bg-9.png") center center no-repeat;
 }
@@ -407,6 +415,99 @@ section.dark-section.section-9 {
 .portfolio_btn:hover, .portfolio_btn:active {
   padding: 0 90px;
   background: rgba(34, 34, 34, 0.1);
+}
+
+/* line 4, ../sass/_about-us.scss */
+section.about-us .section-description {
+  margin-bottom: 70px;
+}
+/* line 7, ../sass/_about-us.scss */
+section.about-us .team-worker {
+  position: relative;
+  cursor: pointer;
+}
+/* line 10, ../sass/_about-us.scss */
+section.about-us .team-worker img {
+  width: 100%;
+}
+/* line 14, ../sass/_about-us.scss */
+section.about-us .team-apply {
+  position: relative;
+  border: 1px solid #000;
+}
+/* line 17, ../sass/_about-us.scss */
+section.about-us .team-apply_description {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 28% 0 0;
+  text-align: center;
+}
+/* line 25, ../sass/_about-us.scss */
+section.about-us .team-apply_title {
+  position: relative;
+  font-family: "BigJohn", sans-serif;
+  font-size: 24px;
+  width: 50%;
+  margin: 0 auto 40px;
+  padding-bottom: 40px;
+}
+/* line 32, ../sass/_about-us.scss */
+section.about-us .team-apply_title:after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 86px;
+  height: 2px;
+  left: 22%;
+  bottom: 0;
+  background: #222;
+}
+/* line 43, ../sass/_about-us.scss */
+section.about-us .team-apply_btn {
+  display: inline-block;
+  font-size: 24px;
+  line-height: 54px;
+  padding: 0 60px;
+}
+/* line 48, ../sass/_about-us.scss */
+section.about-us .team-apply_btn:hover {
+  padding: 0 55px;
+  background: rgba(34, 34, 34, 0.3);
+}
+/* line 54, ../sass/_about-us.scss */
+section.about-us .co-worker_hover {
+  opacity: 1;
+  transition: opacity, .3s;
+  position: absolute;
+  top: 0;
+  width: 91%;
+  height: 100%;
+  padding: 95% 0 0;
+  background: url("../img/icons/about-us-icon.png") 98% 1.5% no-repeat, rgba(34, 34, 34, 0.5);
+  border: 4px solid #000;
+}
+/* line 64, ../sass/_about-us.scss */
+section.about-us .co-worker_hover .name,
+section.about-us .co-worker_hover .position {
+  color: #fff;
+  text-align: center;
+}
+/* line 69, ../sass/_about-us.scss */
+section.about-us .co-worker_hover .name {
+  font-family: "BigJohn", sans-serif;
+  font-size: 14px;
+}
+/* line 73, ../sass/_about-us.scss */
+section.about-us .co-worker_hover .position {
+  font-family: "AmbleBold", sans-serif;
+  font-size: 18px;
+}
+/* line 78, ../sass/_about-us.scss */
+section.about-us .co-worker_hidden {
+  opacity: 0;
+  transition: opacity, .3s;
 }
 
 @media only screen and (max-width: 1199px) {

@@ -3,7 +3,6 @@
 section {
   .section-btn {
     font-family: "AmbleBold", sans-serif;
-    display: block;
     background: transparent;
     text-align: center;
     margin: 0 auto;
@@ -110,6 +109,7 @@ section.light-section {
 }
 
 section.dark-section {
+  text-align: center;
   padding: 200px 0;
   .section-btn {
     position: relative;
@@ -122,6 +122,12 @@ section.dark-section {
     &:hover {
       background: rgba(255,255,255, 0.15);
       padding: 0 70px;
+    }
+  }
+  &.video-section {
+    padding: 0;
+    iframe {
+      width: 100%;
     }
   }
   &.section-2,

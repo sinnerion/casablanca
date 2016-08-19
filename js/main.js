@@ -28,6 +28,14 @@ $(document).ready(function(){
         }
     );
 
+    // About-us preview's hover
+    $('.co-worker_hidden').hover(function() {
+            $(this).removeClass('co-worker_hidden');
+        }, function() {
+            $('.co-worker_hover').addClass('co-worker_hidden');
+        }
+    );
+
     // Portfolio filter
     $('#filter').on('click', 'button', function () {
         $('.active-button').removeClass('active-button');

@@ -11,15 +11,44 @@ section.about-us {
       width: 100%;
     }
   }
+  .co-worker_hover {
+    opacity: 1;
+    transition: opacity, .3s;
+    position: absolute;
+    top: 0;
+    width: 91%;
+    height: 100%;
+    padding: 86% 0 0;
+    background: url('../img/icons/about-us-icon.png') 98% 1.5% no-repeat, rgba($h2-color, .5);
+    border: 4px solid #000;
+    .name,
+    .position {
+      color: #fff;
+      text-align: center;
+    }
+    .name {
+      font-family: "BigJohn", sans-serif;
+      font-size: 24px;
+    }
+    .position {
+      font-family: "AmbleBold", sans-serif;
+      font-size: 18px;
+    }
+  }
+  .co-worker_hidden {
+    opacity: 0;
+    transition: opacity, .3s;
+  }
   .team-apply {
     position: relative;
-    border: 1px solid #000;
     &_description {
       position: absolute;
+      border: 1px solid #000;
       top: 0;
-      left: 0;
-      width: 100%;
+      left: 4%;
+      width: 92%;
       padding: 28% 0 0;
+      height: 100%;
       text-align: center;
     }
     &_title {
@@ -50,33 +79,5 @@ section.about-us {
         background: rgba($h2-color, .3);
       }
     }
-  }
-  .co-worker_hover {
-    opacity: 1;
-    transition: opacity, .3s;
-    position: absolute;
-    top: 0;
-    width: 91%;
-    height: 100%;
-    padding: 95% 0 0;
-    background: url('../img/icons/about-us-icon.png') 98% 1.5% no-repeat, rgba($h2-color, .5);
-    border: 4px solid #000;
-    .name,
-    .position {
-      color: #fff;
-      text-align: center;
-    }
-    .name {
-      font-family: "BigJohn", sans-serif;
-      font-size: 14px;
-    }
-    .position {
-      font-family: "AmbleBold", sans-serif;
-      font-size: 18px;
-    }
-  }
-  .co-worker_hidden {
-    opacity: 0;
-    transition: opacity, .3s;
   }
 }

@@ -50,6 +50,20 @@ and (max-width : 1199px) {
       margin-left: 17%;
     }
   }
+  section.about-us {
+    .co-worker_hover {
+      width: 89%;
+      padding-top: 75%;
+    }
+    .team-apply {
+      &_description {
+        padding-top: 20%;
+      }
+      &_title {
+        width: 70%;
+      }
+    }
+  }
 }
 
 @media only screen
@@ -59,6 +73,16 @@ and (max-width : 992px) {
   }
   section.light-section.gray-section li {
     padding-right: 46px;
+  }
+  section.about-us {
+    .co-worker_hover {
+      width: 93%;
+      padding-top: 85%;
+    }
+    padding-bottom: 105px;
+    .team-worker{
+      margin-bottom: 15px;
+    }
   }
 }
 
@@ -118,6 +142,37 @@ and (max-width : 840px) {
       left: 42%;
     }
   }
+}
+
+@media only screen
+and (max-width : 767px) {
+  section.about-us {
+    .co-worker_hover {
+      width: 96%;
+      padding-top: 100%;
+      .name {
+        font-size: 35px;
+        margin-bottom: 15px;
+      }
+      .position {
+        font-size: 24px;
+      }
+    }
+    .team-apply_title {
+      width: 30%;
+      font-size: 40px;
+      margin-bottom: 70px;
+      &:after {
+        left: 30%;
+      }
+    }
+    .team-apply_btn {
+      font-size: 30px;
+      padding: 0 80px;
+      line-height: 70px;
+    }
+  }
+
 }
 
 @media only screen

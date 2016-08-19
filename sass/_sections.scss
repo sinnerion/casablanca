@@ -8,6 +8,7 @@ section {
     text-align: center;
     margin: 0 auto;
     border: 3px solid;
+    transition: padding, .2s;
     &:hover {
       transition: padding, .3s;
     }
@@ -35,6 +36,35 @@ section.light-section {
       left: 46%;
       bottom: 0;
       background: $h2-color;
+    }
+  }
+  nav {
+    margin: 0 0 85px;
+    ul {
+      margin: 0 auto;
+    }
+    li {
+      margin-right: 30px;
+      li:last-child {
+        margin-right: 0;
+      }
+    }
+    button {
+      background: transparent;
+      border: none;
+      font-size: 18px;
+      font-family: "SlimJoe", sans-serif;
+      font-weight: 300;
+      padding: 0 5px;
+      color: $h2-color;
+      text-transform: uppercase;
+    }
+    button:hover,
+    button:focus,
+    button.active-button {
+      outline: none;
+      text-decoration: none;
+      font-weight: bold;
     }
   }
   .section-description {

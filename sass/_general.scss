@@ -1,0 +1,13 @@
+nav {
+  font-size: 0;
+  ul {
+    margin: 0;
+    display: table;
+  }
+  li {
+    display: inline-block;
+  }
+  a {
+    display: block;
+  }
+}

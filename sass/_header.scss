@@ -23,14 +23,11 @@ header {
       }
     }
     &_nav {
-      display: table;
-      margin: 0;
       position: relative;
       left: 80px;
       top: 66px;
       transition: opacity, left, .3s;
       z-index: 0;
-      font-size: 0;
     }
     .nav-hidden {
       opacity: 0;
@@ -39,14 +36,18 @@ header {
     }
     li {
       font-size: 14px;
-      display: inline-block;
       margin-right: 5px;
       a {
-        display: block;
         padding: 0 10px;
         color: #e28843;
         background: #fff;
         border-radius: 3px;
+      }
+      a:hover,
+      a:focus {
+        text-decoration: none;
+        transform: scale(.93);
+        transition: transform, .2s;
       }
     }
   }

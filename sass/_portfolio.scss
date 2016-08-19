@@ -1,0 +1,75 @@
+@import "variables";
+
+.portfolio {
+  &_row-1 {
+    margin: 0 0 20px;
+  }
+  &_row-2 {
+    margin: 0 0 75px;
+  }
+  &_preview {
+    img {
+      width: 100%;
+    }
+    cursor: pointer;
+    position: relative;
+    opacity: 1;
+    transition: opacity, .2s;
+    &-hover {
+      padding: 40% 0 0;
+      position: absolute;
+      top: 0;
+      width: 92.5%;
+      border: 8px solid #000;
+      height: 100%;
+      background: rgba($h2-color, .7);
+      opacity: 1;
+      transition: opacity, .2s;
+      .title,
+      .description {
+        margin: 0 auto;
+        text-align: center;
+        color: #fff;
+      }
+      .title {
+        font-size: 18px;
+        font-family: "BigJohn", sans-serif;
+        margin-bottom: 25px;
+      }
+      .description {
+        position: relative;
+        padding: 0 0 30px;
+        font-size: 24px;
+        font-family: "AmbleRegular", sans-serif;
+      }
+      .description:after {
+        content: "";
+        display: block;
+        position: absolute;
+        left: 43%;
+        bottom: 0;
+        width: 48px;
+        height: 2px;
+        background: $accent-color;
+      }
+    }
+  }
+  .preview-hidden {
+    opacity: .5;
+    transition: opacity, .5s;
+  }
+  .hover-hidden {
+    opacity: 0;
+    transition: opacity, .4s;
+  }
+  &_btn {
+    font-size: 24px;
+    padding: 0 100px;
+    line-height: 52px;
+    &:hover,
+    &:active {
+      padding: 0 90px;
+      background: rgba($h2-color, .1);
+    }
+  }
+}

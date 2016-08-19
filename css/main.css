@@ -6,6 +6,13 @@
   font-style: normal;
 }
 @font-face {
+  font-family: 'SlimJoe';
+  src: url("../fonts/slim_joe-webfont.eot");
+  src: url("../fonts/slim_joe-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/slim_joe-webfont.woff") format("woff"), url("../fonts/slim_joe-webfont.ttf") format("truetype"), url("../fonts/slim_joe-webfont.svg#slim_joeregular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
   font-family: 'AmbleBold';
   src: url("../fonts/amble-bold-webfont.eot");
   src: url("../fonts/amble-bold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/amble-bold-webfont.woff") format("woff"), url("../fonts/amble-bold-webfont.ttf") format("truetype"), url("../fonts/amble-bold-webfont.svg#amblebold") format("svg");
@@ -26,6 +33,24 @@
   font-weight: normal;
   font-style: normal;
 }
+/* line 1, ../sass/_general.scss */
+nav {
+  font-size: 0;
+}
+/* line 3, ../sass/_general.scss */
+nav ul {
+  margin: 0;
+  display: table;
+}
+/* line 7, ../sass/_general.scss */
+nav li {
+  display: inline-block;
+}
+/* line 10, ../sass/_general.scss */
+nav a {
+  display: block;
+}
+
 /* line 2, ../sass/_header.scss */
 header {
   position: relative;
@@ -56,36 +81,38 @@ header .main-menu_btn[data-toggle="active"] {
 }
 /* line 25, ../sass/_header.scss */
 header .main-menu_nav {
-  display: table;
-  margin: 0;
   position: relative;
   left: 80px;
   top: 66px;
   transition: opacity, left, .3s;
   z-index: 0;
-  font-size: 0;
 }
-/* line 35, ../sass/_header.scss */
+/* line 32, ../sass/_header.scss */
 header .main-menu .nav-hidden {
   opacity: 0;
   left: 70px;
   transition: opacity, left, .7s;
 }
-/* line 40, ../sass/_header.scss */
+/* line 37, ../sass/_header.scss */
 header .main-menu li {
   font-size: 14px;
-  display: inline-block;
   margin-right: 5px;
 }
-/* line 44, ../sass/_header.scss */
+/* line 40, ../sass/_header.scss */
 header .main-menu li a {
-  display: block;
   padding: 0 10px;
   color: #e28843;
   background: #fff;
   border-radius: 3px;
 }
-/* line 53, ../sass/_header.scss */
+/* line 46, ../sass/_header.scss */
+header .main-menu li a:hover,
+header .main-menu li a:focus {
+  text-decoration: none;
+  transform: scale(0.93);
+  transition: transform, .2s;
+}
+/* line 54, ../sass/_header.scss */
 header .header-description {
   text-align: center;
   color: #fffefe;
@@ -94,7 +121,7 @@ header .header-description {
   margin: 0 auto;
   width: 50%;
 }
-/* line 61, ../sass/_header.scss */
+/* line 62, ../sass/_header.scss */
 header h1 {
   color: #fff;
   text-transform: uppercase;
@@ -105,7 +132,7 @@ header h1 {
   font-family: 'BigJohn', sans-serif;
   position: relative;
 }
-/* line 70, ../sass/_header.scss */
+/* line 71, ../sass/_header.scss */
 header h1:after {
   content: "";
   position: absolute;
@@ -125,18 +152,19 @@ section .section-btn {
   text-align: center;
   margin: 0 auto;
   border: 3px solid;
+  transition: padding, .2s;
 }
-/* line 11, ../sass/_sections.scss */
+/* line 12, ../sass/_sections.scss */
 section .section-btn:hover {
   transition: padding, .3s;
 }
 
-/* line 17, ../sass/_sections.scss */
+/* line 18, ../sass/_sections.scss */
 section.light-section {
   padding: 120px 0;
   background: #fff;
 }
-/* line 20, ../sass/_sections.scss */
+/* line 21, ../sass/_sections.scss */
 section.light-section h2 {
   font-size: 30px;
   font-family: "BigJohn", sans-serif;
@@ -147,7 +175,7 @@ section.light-section h2 {
   text-transform: uppercase;
   padding-bottom: 70px;
 }
-/* line 29, ../sass/_sections.scss */
+/* line 30, ../sass/_sections.scss */
 section.light-section h2:after {
   display: block;
   content: "";
@@ -158,7 +186,42 @@ section.light-section h2:after {
   bottom: 0;
   background: #222;
 }
-/* line 40, ../sass/_sections.scss */
+/* line 41, ../sass/_sections.scss */
+section.light-section nav {
+  margin: 0 0 85px;
+}
+/* line 43, ../sass/_sections.scss */
+section.light-section nav ul {
+  margin: 0 auto;
+}
+/* line 46, ../sass/_sections.scss */
+section.light-section nav li {
+  margin-right: 30px;
+}
+/* line 48, ../sass/_sections.scss */
+section.light-section nav li li:last-child {
+  margin-right: 0;
+}
+/* line 52, ../sass/_sections.scss */
+section.light-section nav button {
+  background: transparent;
+  border: none;
+  font-size: 18px;
+  font-family: "SlimJoe", sans-serif;
+  font-weight: 300;
+  padding: 0 5px;
+  color: #222;
+  text-transform: uppercase;
+}
+/* line 62, ../sass/_sections.scss */
+section.light-section nav button:hover,
+section.light-section nav button:focus,
+section.light-section nav button.active-button {
+  outline: none;
+  text-decoration: none;
+  font-weight: bold;
+}
+/* line 70, ../sass/_sections.scss */
 section.light-section .section-description {
   font-size: 22px;
   text-align: center;
@@ -168,11 +231,11 @@ section.light-section .section-description {
   width: 55%;
 }
 
-/* line 49, ../sass/_sections.scss */
+/* line 79, ../sass/_sections.scss */
 section.dark-section {
   padding: 200px 0;
 }
-/* line 51, ../sass/_sections.scss */
+/* line 81, ../sass/_sections.scss */
 section.dark-section .section-btn {
   position: relative;
   z-index: 10;
@@ -182,16 +245,16 @@ section.dark-section .section-btn {
   padding: 0 80px;
   border-color: #fff;
 }
-/* line 59, ../sass/_sections.scss */
+/* line 89, ../sass/_sections.scss */
 section.dark-section .section-btn:hover {
   background: rgba(255, 255, 255, 0.15);
   padding: 0 70px;
 }
-/* line 64, ../sass/_sections.scss */
+/* line 94, ../sass/_sections.scss */
 section.dark-section.section-2, section.dark-section.section-4, section.dark-section.section-9 {
   position: relative;
 }
-/* line 68, ../sass/_sections.scss */
+/* line 98, ../sass/_sections.scss */
 section.dark-section.section-2:after, section.dark-section.section-4:after, section.dark-section.section-9:after {
   content: "";
   display: block;
@@ -203,17 +266,101 @@ section.dark-section.section-2:after, section.dark-section.section-4:after, sect
   background: rgba(34, 34, 34, 0.6);
   z-index: 2;
 }
-/* line 80, ../sass/_sections.scss */
+/* line 110, ../sass/_sections.scss */
 section.dark-section.section-2 {
   background: url("../img/section-bg-2.png") center center no-repeat;
 }
-/* line 83, ../sass/_sections.scss */
+/* line 113, ../sass/_sections.scss */
 section.dark-section.section-4 {
   background: url("../img/section-bg-4.png") center center no-repeat;
 }
-/* line 86, ../sass/_sections.scss */
+/* line 116, ../sass/_sections.scss */
 section.dark-section.section-9 {
   background: url("../img/section-bg-9.png") center center no-repeat;
+}
+
+/* line 4, ../sass/_portfolio.scss */
+.portfolio_row-1 {
+  margin: 0 0 20px;
+}
+/* line 7, ../sass/_portfolio.scss */
+.portfolio_row-2 {
+  margin: 0 0 75px;
+}
+/* line 10, ../sass/_portfolio.scss */
+.portfolio_preview {
+  cursor: pointer;
+  position: relative;
+  opacity: 1;
+  transition: opacity, .2s;
+}
+/* line 11, ../sass/_portfolio.scss */
+.portfolio_preview img {
+  width: 100%;
+}
+/* line 18, ../sass/_portfolio.scss */
+.portfolio_preview-hover {
+  padding: 40% 0 0;
+  position: absolute;
+  top: 0;
+  width: 92.5%;
+  border: 8px solid #000;
+  height: 100%;
+  background: rgba(34, 34, 34, 0.7);
+  opacity: 1;
+  transition: opacity, .2s;
+}
+/* line 28, ../sass/_portfolio.scss */
+.portfolio_preview-hover .title,
+.portfolio_preview-hover .description {
+  margin: 0 auto;
+  text-align: center;
+  color: #fff;
+}
+/* line 34, ../sass/_portfolio.scss */
+.portfolio_preview-hover .title {
+  font-size: 18px;
+  font-family: "BigJohn", sans-serif;
+  margin-bottom: 25px;
+}
+/* line 39, ../sass/_portfolio.scss */
+.portfolio_preview-hover .description {
+  position: relative;
+  padding: 0 0 30px;
+  font-size: 24px;
+  font-family: "AmbleRegular", sans-serif;
+}
+/* line 45, ../sass/_portfolio.scss */
+.portfolio_preview-hover .description:after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 43%;
+  bottom: 0;
+  width: 48px;
+  height: 2px;
+  background: #d87843;
+}
+/* line 57, ../sass/_portfolio.scss */
+.portfolio .preview-hidden {
+  opacity: .5;
+  transition: opacity, .5s;
+}
+/* line 61, ../sass/_portfolio.scss */
+.portfolio .hover-hidden {
+  opacity: 0;
+  transition: opacity, .4s;
+}
+/* line 65, ../sass/_portfolio.scss */
+.portfolio_btn {
+  font-size: 24px;
+  padding: 0 100px;
+  line-height: 52px;
+}
+/* line 69, ../sass/_portfolio.scss */
+.portfolio_btn:hover, .portfolio_btn:active {
+  padding: 0 90px;
+  background: rgba(34, 34, 34, 0.1);
 }
 
 @media only screen and (max-width: 991px) {

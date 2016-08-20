@@ -62,4 +62,7 @@ $(document).ready(function(){
             $(this).next('.form-label').removeClass('form-label_hidden');
         }
     });
+
+    // Window scroll
+
 });

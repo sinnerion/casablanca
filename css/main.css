@@ -68,10 +68,14 @@ header {
   background: url("../img/header-bg-1.png") center top no-repeat, url("../img/header-bg-2.png") center top no-repeat, url("../img/header-bg-3.png") center top no-repeat;
 }
 /* line 8, ../sass/_header.scss */
+header .container {
+  text-align: center;
+}
+/* line 11, ../sass/_header.scss */
 header .main-menu {
   margin-bottom: 240px;
 }
-/* line 10, ../sass/_header.scss */
+/* line 13, ../sass/_header.scss */
 header .main-menu_btn {
   color: #fff;
   font-size: 24px;
@@ -81,15 +85,15 @@ header .main-menu_btn {
   z-index: 1;
   cursor: pointer;
 }
-/* line 18, ../sass/_header.scss */
+/* line 21, ../sass/_header.scss */
 header .main-menu_btn:active i {
   transform: scale(0.9);
 }
-/* line 21, ../sass/_header.scss */
+/* line 24, ../sass/_header.scss */
 header .main-menu_btn[data-toggle="active"] {
   color: #d9a884;
 }
-/* line 25, ../sass/_header.scss */
+/* line 28, ../sass/_header.scss */
 header .main-menu_nav {
   position: relative;
   left: 80px;
@@ -97,41 +101,41 @@ header .main-menu_nav {
   transition: opacity, left, .3s;
   z-index: 0;
 }
-/* line 32, ../sass/_header.scss */
+/* line 35, ../sass/_header.scss */
 header .main-menu .nav-hidden {
   opacity: 0;
   left: 70px;
   transition: opacity, left, .7s;
 }
-/* line 37, ../sass/_header.scss */
+/* line 40, ../sass/_header.scss */
 header .main-menu li {
   font-size: 14px;
   margin-right: 5px;
 }
-/* line 40, ../sass/_header.scss */
+/* line 43, ../sass/_header.scss */
 header .main-menu li a {
   padding: 0 10px;
   color: #e28843;
   background: #fff;
   border-radius: 3px;
 }
-/* line 46, ../sass/_header.scss */
+/* line 49, ../sass/_header.scss */
 header .main-menu li a:hover,
 header .main-menu li a:focus {
   text-decoration: none;
   transform: scale(0.93);
   transition: transform, .2s;
 }
-/* line 54, ../sass/_header.scss */
+/* line 57, ../sass/_header.scss */
 header .header-description {
   text-align: center;
   color: #fffefe;
   font-size: 22px;
   font-family: 'AmbleRegular', sans-serif;
-  margin: 0 auto;
+  margin: 0 auto 25%;
   width: 50%;
 }
-/* line 62, ../sass/_header.scss */
+/* line 65, ../sass/_header.scss */
 header h1 {
   color: #fff;
   text-transform: uppercase;
@@ -142,7 +146,7 @@ header h1 {
   font-family: 'BigJohn', sans-serif;
   position: relative;
 }
-/* line 71, ../sass/_header.scss */
+/* line 74, ../sass/_header.scss */
 header h1:after {
   content: "";
   position: absolute;
@@ -164,56 +168,57 @@ section .section-btn {
 }
 /* line 10, ../sass/_sections.scss */
 section .section-btn:hover {
-  transition: padding, .3s;
+  transition: padding, width, .3s;
+  background: rgba(34, 34, 34, 0.2);
 }
 
-/* line 16, ../sass/_sections.scss */
+/* line 17, ../sass/_sections.scss */
 .light-section {
   padding: 120px 0;
   background: #fff;
 }
-/* line 19, ../sass/_sections.scss */
+/* line 20, ../sass/_sections.scss */
 .light-section.gray-section {
   background: #f4f4f4;
 }
-/* line 21, ../sass/_sections.scss */
+/* line 22, ../sass/_sections.scss */
 .light-section.gray-section ul {
   display: block;
 }
-/* line 24, ../sass/_sections.scss */
+/* line 25, ../sass/_sections.scss */
 .light-section.gray-section li {
   padding: 0 20px;
   width: 20%;
   margin: 0;
   font-size: 36px;
 }
-/* line 30, ../sass/_sections.scss */
+/* line 31, ../sass/_sections.scss */
 .light-section.gray-section a {
   width: 100%;
   height: 50px;
   background: url("../img/clients.png") no-repeat;
 }
-/* line 34, ../sass/_sections.scss */
+/* line 35, ../sass/_sections.scss */
 .light-section.gray-section a.ggl {
   background-position: 0px 0px;
 }
-/* line 37, ../sass/_sections.scss */
+/* line 38, ../sass/_sections.scss */
 .light-section.gray-section a.sams {
   background-position: -240px 0px;
 }
-/* line 40, ../sass/_sections.scss */
+/* line 41, ../sass/_sections.scss */
 .light-section.gray-section a.flick {
   background-position: -475px 0px;
 }
-/* line 43, ../sass/_sections.scss */
+/* line 44, ../sass/_sections.scss */
 .light-section.gray-section a.frsq {
   background-position: -718px 0px;
 }
-/* line 46, ../sass/_sections.scss */
+/* line 47, ../sass/_sections.scss */
 .light-section.gray-section a.pint {
   background-position: -988px 0px;
 }
-/* line 51, ../sass/_sections.scss */
+/* line 52, ../sass/_sections.scss */
 .light-section h2 {
   font-size: 30px;
   font-family: "BigJohn", sans-serif;
@@ -224,7 +229,7 @@ section .section-btn:hover {
   text-transform: uppercase;
   padding-bottom: 70px;
 }
-/* line 60, ../sass/_sections.scss */
+/* line 61, ../sass/_sections.scss */
 .light-section h2:after {
   display: block;
   content: "";
@@ -235,23 +240,23 @@ section .section-btn:hover {
   bottom: 0;
   background: #222;
 }
-/* line 71, ../sass/_sections.scss */
+/* line 72, ../sass/_sections.scss */
 .light-section nav {
   margin: 0 0 85px;
 }
-/* line 73, ../sass/_sections.scss */
+/* line 74, ../sass/_sections.scss */
 .light-section nav ul {
   margin: 0 auto;
 }
-/* line 76, ../sass/_sections.scss */
+/* line 77, ../sass/_sections.scss */
 .light-section nav li {
   margin-right: 30px;
 }
-/* line 78, ../sass/_sections.scss */
+/* line 79, ../sass/_sections.scss */
 .light-section nav li:last-child {
   margin-right: 0;
 }
-/* line 82, ../sass/_sections.scss */
+/* line 83, ../sass/_sections.scss */
 .light-section nav button {
   background: transparent;
   border: none;
@@ -262,7 +267,7 @@ section .section-btn:hover {
   color: #222;
   text-transform: uppercase;
 }
-/* line 92, ../sass/_sections.scss */
+/* line 93, ../sass/_sections.scss */
 .light-section nav button:hover,
 .light-section nav button:focus,
 .light-section nav button.active-button {
@@ -270,7 +275,7 @@ section .section-btn:hover {
   text-decoration: none;
   font-weight: bold;
 }
-/* line 100, ../sass/_sections.scss */
+/* line 101, ../sass/_sections.scss */
 .light-section .section-description {
   font-size: 22px;
   text-align: center;
@@ -279,114 +284,114 @@ section .section-btn:hover {
   margin: 0 auto;
   width: 55%;
 }
-/* line 108, ../sass/_sections.scss */
+/* line 109, ../sass/_sections.scss */
 .light-section.advantage-section .section-description, .light-section.contact-section .section-description {
   margin-bottom: 100px;
 }
-/* line 112, ../sass/_sections.scss */
+/* line 113, ../sass/_sections.scss */
 .light-section_slider {
   text-align: center;
 }
-/* line 114, ../sass/_sections.scss */
+/* line 115, ../sass/_sections.scss */
 .light-section_slider .slider-advantages {
   font-family: "AmbleRegular";
 }
-/* line 116, ../sass/_sections.scss */
+/* line 117, ../sass/_sections.scss */
 .light-section_slider .slider-advantages img {
   margin-bottom: 40px;
 }
-/* line 119, ../sass/_sections.scss */
+/* line 120, ../sass/_sections.scss */
 .light-section_slider .slider-advantages_title {
   font-size: 24px;
   margin-bottom: 35px;
 }
-/* line 123, ../sass/_sections.scss */
+/* line 124, ../sass/_sections.scss */
 .light-section_slider .slider-advantages_description {
   font-size: 16px;
   width: 80%;
   margin: 0 auto;
 }
-/* line 129, ../sass/_sections.scss */
+/* line 130, ../sass/_sections.scss */
 .light-section_slider ol.carousel-indicators.slider-indicators {
   bottom: -20%;
   margin: 0;
   left: 0;
   width: 100%;
 }
-/* line 134, ../sass/_sections.scss */
+/* line 135, ../sass/_sections.scss */
 .light-section_slider ol.carousel-indicators.slider-indicators li {
   background: #d5d5d5;
   width: 12px;
   height: 12px;
 }
-/* line 138, ../sass/_sections.scss */
+/* line 139, ../sass/_sections.scss */
 .light-section_slider ol.carousel-indicators.slider-indicators li.active {
   background: #d87843;
 }
-/* line 144, ../sass/_sections.scss */
+/* line 145, ../sass/_sections.scss */
 .light-section .contact-info {
   background: linear-gradient(to left, #e4e4e4 70%, #f2f2f2 30%);
   padding: 120px 0;
 }
-/* line 148, ../sass/_sections.scss */
+/* line 149, ../sass/_sections.scss */
 .light-section .contact-info .our-location_title {
   font-size: 24px;
   font-family: "BigJohn", sans-serif;
   margin-bottom: 40px;
 }
-/* line 153, ../sass/_sections.scss */
+/* line 154, ../sass/_sections.scss */
 .light-section .contact-info .our-location_description {
   font-size: 22px;
   font-family: "AmbleLight", sans-serif;
   font-style: italic;
   margin-bottom: 40px;
 }
-/* line 160, ../sass/_sections.scss */
+/* line 161, ../sass/_sections.scss */
 .light-section .contact-info nav,
 .light-section .contact-info ul {
   margin: 0;
 }
-/* line 164, ../sass/_sections.scss */
+/* line 165, ../sass/_sections.scss */
 .light-section .contact-info li {
   margin-right: 25px;
 }
-/* line 167, ../sass/_sections.scss */
+/* line 168, ../sass/_sections.scss */
 .light-section .contact-info li a {
   font-size: 14px;
   width: 25px;
   height: 25px;
   background: url("../img/social-sprite.png") no-repeat;
 }
-/* line 173, ../sass/_sections.scss */
+/* line 174, ../sass/_sections.scss */
 .light-section .contact-info li a.tw {
   background-position: 0px 2px;
 }
-/* line 176, ../sass/_sections.scss */
+/* line 177, ../sass/_sections.scss */
 .light-section .contact-info li a.fb {
   background-position: 0px -30px;
 }
-/* line 179, ../sass/_sections.scss */
+/* line 180, ../sass/_sections.scss */
 .light-section .contact-info li a.ln {
   background-position: 0px -64px;
 }
-/* line 182, ../sass/_sections.scss */
+/* line 183, ../sass/_sections.scss */
 .light-section .contact-info li a.vm {
   background-position: 0px -95px;
 }
-/* line 185, ../sass/_sections.scss */
+/* line 186, ../sass/_sections.scss */
 .light-section .contact-info li a.be {
   background-position: 0px -123px;
 }
-/* line 190, ../sass/_sections.scss */
+/* line 191, ../sass/_sections.scss */
 .light-section .contact-form_input {
   position: relative;
   margin-bottom: 110px;
 }
-/* line 193, ../sass/_sections.scss */
+/* line 194, ../sass/_sections.scss */
 .light-section .contact-form_input:last-child {
   margin-bottom: 0;
 }
-/* line 196, ../sass/_sections.scss */
+/* line 197, ../sass/_sections.scss */
 .light-section .contact-form_input label,
 .light-section .contact-form_input input[type="text"] {
   font-size: 18px;
@@ -394,35 +399,48 @@ section .section-btn:hover {
   color: #676767;
   font-family: "AmbleLight", sans-serif;
 }
-/* line 203, ../sass/_sections.scss */
+/* line 204, ../sass/_sections.scss */
 .light-section .contact-form_input label {
   position: absolute;
   left: 30px;
   top: -10px;
 }
-/* line 208, ../sass/_sections.scss */
+/* line 209, ../sass/_sections.scss */
 .light-section .contact-form_input .form-label_hidden {
   opacity: 0;
   transition: opacity, .2s;
 }
-/* line 213, ../sass/_sections.scss */
+/* line 214, ../sass/_sections.scss */
 .light-section .contact-form input[type="text"] {
   width: 100%;
   background: transparent;
   border: none;
   border-bottom: 1px solid #676767;
 }
-/* line 218, ../sass/_sections.scss */
+/* line 219, ../sass/_sections.scss */
 .light-section .contact-form input[type="text"]:focus {
   outline: none;
 }
+/* line 223, ../sass/_sections.scss */
+.light-section .contact-form_btn {
+  margin: 0 auto;
+  display: block;
+  width: 100%;
+  line-height: 60px;
+  font-size: 24px;
+  font-family: "AmbleBold", sans-serif;
+}
+/* line 230, ../sass/_sections.scss */
+.light-section .contact-form_btn:hover {
+  width: 90%;
+}
 
-/* line 225, ../sass/_sections.scss */
+/* line 237, ../sass/_sections.scss */
 .dark-section {
   text-align: center;
   padding: 200px 0;
 }
-/* line 228, ../sass/_sections.scss */
+/* line 240, ../sass/_sections.scss */
 .dark-section .section-btn {
   position: relative;
   z-index: 10;
@@ -432,24 +450,24 @@ section .section-btn:hover {
   padding: 0 80px;
   border-color: #fff;
 }
-/* line 236, ../sass/_sections.scss */
+/* line 248, ../sass/_sections.scss */
 .dark-section .section-btn:hover {
   background: rgba(255, 255, 255, 0.15);
   padding: 0 70px;
 }
-/* line 241, ../sass/_sections.scss */
+/* line 253, ../sass/_sections.scss */
 .dark-section.video-section {
   padding: 0;
 }
-/* line 243, ../sass/_sections.scss */
+/* line 255, ../sass/_sections.scss */
 .dark-section.video-section iframe {
   width: 100%;
 }
-/* line 247, ../sass/_sections.scss */
+/* line 259, ../sass/_sections.scss */
 .dark-section.section-2, .dark-section.section-4, .dark-section.section-9 {
   position: relative;
 }
-/* line 251, ../sass/_sections.scss */
+/* line 263, ../sass/_sections.scss */
 .dark-section.section-2:after, .dark-section.section-4:after, .dark-section.section-9:after {
   content: "";
   display: block;
@@ -461,15 +479,15 @@ section .section-btn:hover {
   background: rgba(34, 34, 34, 0.6);
   z-index: 2;
 }
-/* line 263, ../sass/_sections.scss */
+/* line 275, ../sass/_sections.scss */
 .dark-section.section-2 {
   background: url("../img/section-bg-2.png") center center no-repeat;
 }
-/* line 266, ../sass/_sections.scss */
+/* line 278, ../sass/_sections.scss */
 .dark-section.section-4 {
   background: url("../img/section-bg-4.png") center center no-repeat;
 }
-/* line 269, ../sass/_sections.scss */
+/* line 281, ../sass/_sections.scss */
 .dark-section.section-9 {
   background: url("../img/section-bg-9.png") center center no-repeat;
 }
@@ -725,96 +743,107 @@ footer .footer-copyright a:hover {
   section.about-us .team-worker {
     margin-bottom: 15px;
   }
-}
-@media only screen and (max-width: 992px) {
-  /* line 91, ../sass/_media.scss */
+
+  /* line 87, ../sass/_media.scss */
   .light-section_slider ol.carousel-indicators.slider-indicators {
     bottom: -10%;
   }
 }
+@media only screen and (max-width: 991px) {
+  /* line 94, ../sass/_media.scss */
+  .light-section .contact-info {
+    background: linear-gradient(to top, #e4e4e4 61%, #f2f2f2 49%);
+    padding: 120px 0;
+  }
+  /* line 97, ../sass/_media.scss */
+  .light-section .contact-info .our-location {
+    margin-bottom: 60px;
+    padding-left: 33%;
+  }
+}
 @media only screen and (max-width: 950px) {
-  /* line 99, ../sass/_media.scss */
+  /* line 107, ../sass/_media.scss */
   header .main-menu_nav {
     width: 70%;
   }
-  /* line 101, ../sass/_media.scss */
+  /* line 109, ../sass/_media.scss */
   header .main-menu_nav li {
     margin-bottom: 5px;
   }
 }
 @media only screen and (max-width: 900px) {
-  /* line 111, ../sass/_media.scss */
+  /* line 119, ../sass/_media.scss */
   header .main-menu {
     margin-bottom: 180px;
   }
-  /* line 113, ../sass/_media.scss */
+  /* line 121, ../sass/_media.scss */
   header .main-menu_btn {
     left: 49%;
   }
-  /* line 116, ../sass/_media.scss */
+  /* line 124, ../sass/_media.scss */
   header .main-menu_nav {
     margin: 0 auto;
     left: 3%;
     top: 105px;
     transition: opacity .3s;
   }
-  /* line 122, ../sass/_media.scss */
+  /* line 130, ../sass/_media.scss */
   header .main-menu .nav-hidden {
     left: 3%;
     transition: opacity .7s;
   }
-  /* line 127, ../sass/_media.scss */
+  /* line 135, ../sass/_media.scss */
   header h1 {
     font-size: 40px;
     margin-bottom: 30px;
   }
-  /* line 131, ../sass/_media.scss */
+  /* line 139, ../sass/_media.scss */
   header .header-description {
     font-size: 18px;
     width: 66%;
   }
 }
 @media only screen and (max-width: 840px) {
-  /* line 141, ../sass/_media.scss */
+  /* line 149, ../sass/_media.scss */
   header .main-menu_nav {
     width: 40%;
     margin-bottom: -35px;
   }
-  /* line 144, ../sass/_media.scss */
+  /* line 152, ../sass/_media.scss */
   header .main-menu_nav a {
     font-size: 14px;
   }
-  /* line 148, ../sass/_media.scss */
+  /* line 156, ../sass/_media.scss */
   header h1:after {
     left: 42%;
   }
 }
 @media only screen and (max-width: 767px) {
-  /* line 157, ../sass/_media.scss */
+  /* line 165, ../sass/_media.scss */
   section.about-us .co-worker_hover {
     width: 96%;
     padding-top: 100%;
   }
-  /* line 160, ../sass/_media.scss */
+  /* line 168, ../sass/_media.scss */
   section.about-us .co-worker_hover .name {
     font-size: 35px;
     margin-bottom: 15px;
   }
-  /* line 164, ../sass/_media.scss */
+  /* line 172, ../sass/_media.scss */
   section.about-us .co-worker_hover .position {
     font-size: 24px;
   }
-  /* line 168, ../sass/_media.scss */
+  /* line 176, ../sass/_media.scss */
   section.about-us .team-apply_title {
     width: 30%;
     font-size: 40px;
     margin-bottom: 70px;
   }
-  /* line 172, ../sass/_media.scss */
+  /* line 180, ../sass/_media.scss */
   section.about-us .team-apply_title:after {
     left: 30%;
   }
-  /* line 176, ../sass/_media.scss */
+  /* line 184, ../sass/_media.scss */
   section.about-us .team-apply_btn {
     font-size: 30px;
     padding: 0 80px;
@@ -822,54 +851,54 @@ footer .footer-copyright a:hover {
   }
 }
 @media only screen and (max-width: 739px) {
-  /* line 191, ../sass/_media.scss */
+  /* line 199, ../sass/_media.scss */
   section.light-section.gray-section li {
     width: 50%;
     margin-bottom: 20px;
     margin-left: 0 !important;
     padding-right: 117px;
   }
-  /* line 196, ../sass/_media.scss */
+  /* line 204, ../sass/_media.scss */
   section.light-section.gray-section li:last-child {
     margin-bottom: 0;
   }
 }
 @media only screen and (max-width: 640px) {
-  /* line 204, ../sass/_media.scss */
+  /* line 212, ../sass/_media.scss */
   section.light-section.gray-section li {
     padding: 0 203px;
     width: 100%;
   }
 }
 @media only screen and (max-width: 600px) {
-  /* line 213, ../sass/_media.scss */
+  /* line 221, ../sass/_media.scss */
   header h1 {
     font-size: 26px;
     padding-bottom: 25px;
   }
 
-  /* line 218, ../sass/_media.scss */
+  /* line 226, ../sass/_media.scss */
   section.light-section h2:after {
     left: 43%;
   }
 }
 @media only screen and (max-width: 444px) {
-  /* line 226, ../sass/_media.scss */
+  /* line 234, ../sass/_media.scss */
   header .main-menu_nav {
     width: 48%;
   }
 
-  /* line 230, ../sass/_media.scss */
+  /* line 238, ../sass/_media.scss */
   section.light-section h2 {
     font-size: 26px;
   }
-  /* line 232, ../sass/_media.scss */
+  /* line 240, ../sass/_media.scss */
   section.light-section h2:after {
     left: 41%;
   }
 }
 @media only screen and (max-width: 370px) {
-  /* line 241, ../sass/_media.scss */
+  /* line 249, ../sass/_media.scss */
   header .main-menu_nav {
     width: 56%;
   }

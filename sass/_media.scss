@@ -84,12 +84,20 @@ and (max-width : 992px) {
       margin-bottom: 15px;
     }
   }
+  .light-section_slider ol.carousel-indicators.slider-indicators {
+    bottom: -10%;
+  }
 }
 
 @media only screen
-and (max-width : 992px) {
-  .light-section_slider ol.carousel-indicators.slider-indicators {
-    bottom: -10%;
+and (max-width : 991px) {
+  .light-section .contact-info {
+    background: linear-gradient(to top, #e4e4e4 61%, #f2f2f2 49%);
+    padding: 120px 0;
+    .our-location {
+      margin-bottom: 60px;
+      padding-left: 33%;
+    }
   }
 }
 

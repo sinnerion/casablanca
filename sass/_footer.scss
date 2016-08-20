@@ -1,0 +1,20 @@
+@import "variables";
+
+footer {
+  padding: 100px 0 90px;
+  background: $h2-color;
+  font-size: 16px;
+  font-family: "AmbleRegular", sans-serif;
+  color: $footer-txt;
+  text-align: center;
+  .footer-logo {
+    margin-bottom: 65px;
+  }
+  .footer-copyright a {
+    text-decoration: none;
+    color: $accent-color;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}

@@ -555,6 +555,29 @@ section.about-us .team-apply_btn:hover {
   background: rgba(34, 34, 34, 0.3);
 }
 
+/* line 3, ../sass/_footer.scss */
+footer {
+  padding: 100px 0 90px;
+  background: #222;
+  font-size: 16px;
+  font-family: "AmbleRegular", sans-serif;
+  color: #e4e4e4;
+  text-align: center;
+}
+/* line 10, ../sass/_footer.scss */
+footer .footer-logo {
+  margin-bottom: 65px;
+}
+/* line 13, ../sass/_footer.scss */
+footer .footer-copyright a {
+  text-decoration: none;
+  color: #d87843;
+}
+/* line 16, ../sass/_footer.scss */
+footer .footer-copyright a:hover {
+  text-decoration: underline;
+}
+
 @media only screen and (max-width: 1199px) {
   /* line 45, ../sass/_media.scss */
   section.light-section.gray-section li {

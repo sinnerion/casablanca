@@ -87,6 +87,13 @@ and (max-width : 992px) {
 }
 
 @media only screen
+and (max-width : 992px) {
+  .light-section_slider ol.carousel-indicators.slider-indicators {
+    bottom: -10%;
+  }
+}
+
+@media only screen
 and (max-width : 950px) {
   header {
     .main-menu_nav {
@@ -172,6 +179,10 @@ and (max-width : 767px) {
       line-height: 70px;
     }
   }
+
+}
+@media only screen
+and (min-width : 768px) {
 
 }
 

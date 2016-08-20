@@ -71,16 +71,7 @@ header {
     text-align: center;
     font-family: 'BigJohn', sans-serif;
     position: relative;
-    &:after {
-      content: "";
-      position: absolute;
-      display: block;
-      height: 2px;
-      left: 45%;
-      bottom: 0;
-      width: 86px;
-      background: #fff;
-    }
+    background: url('../img/icons/heading-line-light.png') center bottom no-repeat;
   }
 
 

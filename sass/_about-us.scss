@@ -55,19 +55,9 @@ section.about-us {
       position: relative;
       font-family: "BigJohn", sans-serif;
       font-size: 24px;
-      width: 50%;
       margin: 0 auto 40px;
       padding-bottom: 40px;
-      &:after {
-        content: "";
-        display: block;
-        position: absolute;
-        width: 86px;
-        height: 2px;
-        left: 22%;
-        bottom: 0;
-        background: $h2-color;
-      }
+      background: url('../img/icons/heading-line-dark.png') center bottom no-repeat;
     }
     &_btn {
       display: inline-block;

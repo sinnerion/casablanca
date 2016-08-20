@@ -59,18 +59,12 @@ and (max-width : 1199px) {
       &_description {
         padding-top: 20%;
       }
-      &_title {
-        width: 70%;
-      }
     }
   }
 }
 
 @media only screen
 and (max-width : 992px) {
-  section.light-section h2:after {
-    left: 44%;
-  }
   section.light-section.gray-section li {
     padding-right: 46px;
   }
@@ -153,14 +147,22 @@ and (max-width : 840px) {
         font-size: 14px;
       }
     }
-    h1:after {
-      left: 42%;
-    }
   }
 }
 
 @media only screen
 and (max-width : 767px) {
+  .portfolio-preview_hover {
+    width: 95.9%;
+    .title {
+      font-size: 26px;
+      margin-bottom: 40px;
+    }
+    .description {
+      left: 46.5%;
+      padding-bottom: 45px;
+    }
+  }
   section.about-us {
     .co-worker_hover {
       width: 96%;
@@ -173,12 +175,13 @@ and (max-width : 767px) {
         font-size: 24px;
       }
     }
-    .team-apply_title {
-      width: 30%;
-      font-size: 40px;
-      margin-bottom: 70px;
-      &:after {
-        left: 30%;
+    .team-apply {
+      &_description {
+        padding-top: 35%;
+      }
+      &_title {
+        font-size: 40px;
+        margin-bottom: 70px;
       }
     }
     .team-apply_btn {
@@ -187,11 +190,6 @@ and (max-width : 767px) {
       line-height: 70px;
     }
   }
-
-}
-@media only screen
-and (min-width : 768px) {
-
 }
 
 @media only screen
@@ -216,15 +214,20 @@ and (max-width : 640px) {
 }
 
 @media only screen
+and (max-width : 681px) {
+  .light-section nav a {
+    font-size: 12px;
+    font-family: "BigJohn", sans-serif;
+  }
+}
+
+@media only screen
 and (max-width : 600px) {
   header {
     h1 {
       font-size: 26px;
       padding-bottom: 25px;
     }
-  }
-  section.light-section h2:after {
-    left: 43%;
   }
 }
 
@@ -237,9 +240,6 @@ and (max-width : 444px) {
   }
   section.light-section h2 {
     font-size: 26px;
-    &:after {
-      left: 41%;
-    }
   }
 }
 

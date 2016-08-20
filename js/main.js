@@ -1,6 +1,6 @@
 $(document).ready(function(){
 
-    // Main-menu toggle -------------------
+    // Main-menu toggle --------------------------
    $('.main-menu_btn').click(function(){
        var activeBtn = $(this).attr('data-toggle');
        $(this).attr('data-toggle', 'inactive');
@@ -28,7 +28,7 @@ $(document).ready(function(){
         }
     );
 
-    // About-us preview's hover
+    // About-us preview's hover -------------------------
     $('.co-worker_hidden').hover(function() {
             $(this).removeClass('co-worker_hidden');
         }, function() {
@@ -36,7 +36,7 @@ $(document).ready(function(){
         }
     );
 
-    // Portfolio filter
+    // Portfolio filter ---------------------
     $('#filter').on('click', 'button', function () {
         $('.active-button').removeClass('active-button');
         $(this).addClass('active-button');
@@ -53,7 +53,7 @@ $(document).ready(function(){
         });
     });
 
-    //Form plasceholders
+    //Form placeholders
     $('.js-placeholder').focus(function () {
         $(this).next('.form-label').addClass('form-label_hidden');
     });
@@ -63,6 +63,6 @@ $(document).ready(function(){
         }
     });
 
-    // Window scroll
-
+    // Window scroll ---------------
+    // Here sometimes will be nice scroll-code
 });

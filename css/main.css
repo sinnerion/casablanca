@@ -145,17 +145,7 @@ header h1 {
   text-align: center;
   font-family: 'BigJohn', sans-serif;
   position: relative;
-}
-/* line 74, ../sass/_header.scss */
-header h1:after {
-  content: "";
-  position: absolute;
-  display: block;
-  height: 2px;
-  left: 45%;
-  bottom: 0;
-  width: 86px;
-  background: #fff;
+  background: url("../img/icons/heading-line-light.png") center bottom no-repeat;
 }
 
 /* line 4, ../sass/_sections.scss */
@@ -228,35 +218,25 @@ section .section-btn:hover {
   color: #222;
   text-transform: uppercase;
   padding-bottom: 70px;
+  background: url("../img/icons/heading-line-dark.png") center bottom no-repeat;
 }
-/* line 61, ../sass/_sections.scss */
-.light-section h2:after {
-  display: block;
-  content: "";
-  width: 86px;
-  height: 2px;
-  position: absolute;
-  left: 46%;
-  bottom: 0;
-  background: #222;
-}
-/* line 72, ../sass/_sections.scss */
+/* line 63, ../sass/_sections.scss */
 .light-section nav {
   margin: 0 0 85px;
 }
-/* line 74, ../sass/_sections.scss */
+/* line 65, ../sass/_sections.scss */
 .light-section nav ul {
   margin: 0 auto;
 }
-/* line 77, ../sass/_sections.scss */
+/* line 68, ../sass/_sections.scss */
 .light-section nav li {
   margin-right: 30px;
 }
-/* line 79, ../sass/_sections.scss */
+/* line 70, ../sass/_sections.scss */
 .light-section nav li:last-child {
   margin-right: 0;
 }
-/* line 83, ../sass/_sections.scss */
+/* line 74, ../sass/_sections.scss */
 .light-section nav button {
   background: transparent;
   border: none;
@@ -267,7 +247,7 @@ section .section-btn:hover {
   color: #222;
   text-transform: uppercase;
 }
-/* line 93, ../sass/_sections.scss */
+/* line 84, ../sass/_sections.scss */
 .light-section nav button:hover,
 .light-section nav button:focus,
 .light-section nav button.active-button {
@@ -275,7 +255,7 @@ section .section-btn:hover {
   text-decoration: none;
   font-weight: bold;
 }
-/* line 101, ../sass/_sections.scss */
+/* line 92, ../sass/_sections.scss */
 .light-section .section-description {
   font-size: 22px;
   text-align: center;
@@ -284,114 +264,118 @@ section .section-btn:hover {
   margin: 0 auto;
   width: 55%;
 }
-/* line 109, ../sass/_sections.scss */
+/* line 100, ../sass/_sections.scss */
+.light-section.contact-section {
+  padding-bottom: 0;
+}
+/* line 103, ../sass/_sections.scss */
 .light-section.advantage-section .section-description, .light-section.contact-section .section-description {
   margin-bottom: 100px;
 }
-/* line 113, ../sass/_sections.scss */
+/* line 107, ../sass/_sections.scss */
 .light-section_slider {
   text-align: center;
 }
-/* line 115, ../sass/_sections.scss */
+/* line 109, ../sass/_sections.scss */
 .light-section_slider .slider-advantages {
   font-family: "AmbleRegular";
 }
-/* line 117, ../sass/_sections.scss */
+/* line 111, ../sass/_sections.scss */
 .light-section_slider .slider-advantages img {
   margin-bottom: 40px;
 }
-/* line 120, ../sass/_sections.scss */
+/* line 114, ../sass/_sections.scss */
 .light-section_slider .slider-advantages_title {
   font-size: 24px;
   margin-bottom: 35px;
 }
-/* line 124, ../sass/_sections.scss */
+/* line 118, ../sass/_sections.scss */
 .light-section_slider .slider-advantages_description {
   font-size: 16px;
   width: 80%;
   margin: 0 auto;
 }
-/* line 130, ../sass/_sections.scss */
+/* line 124, ../sass/_sections.scss */
 .light-section_slider ol.carousel-indicators.slider-indicators {
   bottom: -20%;
   margin: 0;
   left: 0;
   width: 100%;
 }
-/* line 135, ../sass/_sections.scss */
+/* line 129, ../sass/_sections.scss */
 .light-section_slider ol.carousel-indicators.slider-indicators li {
   background: #d5d5d5;
   width: 12px;
   height: 12px;
 }
-/* line 139, ../sass/_sections.scss */
+/* line 133, ../sass/_sections.scss */
 .light-section_slider ol.carousel-indicators.slider-indicators li.active {
   background: #d87843;
 }
-/* line 145, ../sass/_sections.scss */
+/* line 139, ../sass/_sections.scss */
 .light-section .contact-info {
   background: linear-gradient(to left, #e4e4e4 70%, #f2f2f2 30%);
   padding: 120px 0;
 }
-/* line 149, ../sass/_sections.scss */
+/* line 143, ../sass/_sections.scss */
 .light-section .contact-info .our-location_title {
   font-size: 24px;
   font-family: "BigJohn", sans-serif;
   margin-bottom: 40px;
 }
-/* line 154, ../sass/_sections.scss */
+/* line 148, ../sass/_sections.scss */
 .light-section .contact-info .our-location_description {
   font-size: 22px;
   font-family: "AmbleLight", sans-serif;
   font-style: italic;
   margin-bottom: 40px;
 }
-/* line 161, ../sass/_sections.scss */
+/* line 155, ../sass/_sections.scss */
 .light-section .contact-info nav,
 .light-section .contact-info ul {
   margin: 0;
 }
-/* line 165, ../sass/_sections.scss */
+/* line 159, ../sass/_sections.scss */
 .light-section .contact-info li {
   margin-right: 25px;
 }
-/* line 168, ../sass/_sections.scss */
+/* line 162, ../sass/_sections.scss */
 .light-section .contact-info li a {
   font-size: 14px;
   width: 25px;
   height: 25px;
   background: url("../img/social-sprite.png") no-repeat;
 }
-/* line 174, ../sass/_sections.scss */
+/* line 168, ../sass/_sections.scss */
 .light-section .contact-info li a.tw {
   background-position: 0px 2px;
 }
-/* line 177, ../sass/_sections.scss */
+/* line 171, ../sass/_sections.scss */
 .light-section .contact-info li a.fb {
   background-position: 0px -30px;
 }
-/* line 180, ../sass/_sections.scss */
+/* line 174, ../sass/_sections.scss */
 .light-section .contact-info li a.ln {
   background-position: 0px -64px;
 }
-/* line 183, ../sass/_sections.scss */
+/* line 177, ../sass/_sections.scss */
 .light-section .contact-info li a.vm {
   background-position: 0px -95px;
 }
-/* line 186, ../sass/_sections.scss */
+/* line 180, ../sass/_sections.scss */
 .light-section .contact-info li a.be {
   background-position: 0px -123px;
 }
-/* line 191, ../sass/_sections.scss */
+/* line 185, ../sass/_sections.scss */
 .light-section .contact-form_input {
   position: relative;
   margin-bottom: 110px;
 }
-/* line 194, ../sass/_sections.scss */
+/* line 188, ../sass/_sections.scss */
 .light-section .contact-form_input:last-child {
   margin-bottom: 0;
 }
-/* line 197, ../sass/_sections.scss */
+/* line 191, ../sass/_sections.scss */
 .light-section .contact-form_input label,
 .light-section .contact-form_input input[type="text"] {
   font-size: 18px;
@@ -399,29 +383,30 @@ section .section-btn:hover {
   color: #676767;
   font-family: "AmbleLight", sans-serif;
 }
-/* line 204, ../sass/_sections.scss */
+/* line 198, ../sass/_sections.scss */
 .light-section .contact-form_input label {
   position: absolute;
   left: 30px;
   top: -10px;
 }
-/* line 209, ../sass/_sections.scss */
+/* line 203, ../sass/_sections.scss */
 .light-section .contact-form_input .form-label_hidden {
   opacity: 0;
   transition: opacity, .2s;
 }
-/* line 214, ../sass/_sections.scss */
+/* line 208, ../sass/_sections.scss */
 .light-section .contact-form input[type="text"] {
+  padding-left: 2%;
   width: 100%;
   background: transparent;
   border: none;
   border-bottom: 1px solid #676767;
 }
-/* line 219, ../sass/_sections.scss */
+/* line 214, ../sass/_sections.scss */
 .light-section .contact-form input[type="text"]:focus {
   outline: none;
 }
-/* line 223, ../sass/_sections.scss */
+/* line 218, ../sass/_sections.scss */
 .light-section .contact-form_btn {
   margin: 0 auto;
   display: block;
@@ -430,17 +415,17 @@ section .section-btn:hover {
   font-size: 24px;
   font-family: "AmbleBold", sans-serif;
 }
-/* line 230, ../sass/_sections.scss */
+/* line 225, ../sass/_sections.scss */
 .light-section .contact-form_btn:hover {
   width: 90%;
 }
 
-/* line 237, ../sass/_sections.scss */
+/* line 232, ../sass/_sections.scss */
 .dark-section {
   text-align: center;
   padding: 200px 0;
 }
-/* line 240, ../sass/_sections.scss */
+/* line 235, ../sass/_sections.scss */
 .dark-section .section-btn {
   position: relative;
   z-index: 10;
@@ -450,24 +435,24 @@ section .section-btn:hover {
   padding: 0 80px;
   border-color: #fff;
 }
-/* line 248, ../sass/_sections.scss */
+/* line 243, ../sass/_sections.scss */
 .dark-section .section-btn:hover {
   background: rgba(255, 255, 255, 0.15);
   padding: 0 70px;
 }
-/* line 253, ../sass/_sections.scss */
+/* line 248, ../sass/_sections.scss */
 .dark-section.video-section {
   padding: 0;
 }
-/* line 255, ../sass/_sections.scss */
+/* line 250, ../sass/_sections.scss */
 .dark-section.video-section iframe {
   width: 100%;
 }
-/* line 259, ../sass/_sections.scss */
+/* line 254, ../sass/_sections.scss */
 .dark-section.section-2, .dark-section.section-4, .dark-section.section-9 {
   position: relative;
 }
-/* line 263, ../sass/_sections.scss */
+/* line 258, ../sass/_sections.scss */
 .dark-section.section-2:after, .dark-section.section-4:after, .dark-section.section-9:after {
   content: "";
   display: block;
@@ -479,39 +464,36 @@ section .section-btn:hover {
   background: rgba(34, 34, 34, 0.6);
   z-index: 2;
 }
-/* line 275, ../sass/_sections.scss */
+/* line 270, ../sass/_sections.scss */
 .dark-section.section-2 {
   background: url("../img/section-bg-2.png") center center no-repeat;
 }
-/* line 278, ../sass/_sections.scss */
+/* line 273, ../sass/_sections.scss */
 .dark-section.section-4 {
   background: url("../img/section-bg-4.png") center center no-repeat;
 }
-/* line 281, ../sass/_sections.scss */
+/* line 276, ../sass/_sections.scss */
 .dark-section.section-9 {
   background: url("../img/section-bg-9.png") center center no-repeat;
 }
 
 /* line 4, ../sass/_portfolio.scss */
-.portfolio_row-1 {
-  margin: 0 0 20px;
+.portfolio_row {
+  margin: 0 0 55px;
 }
 /* line 7, ../sass/_portfolio.scss */
-.portfolio_row-2 {
-  margin: 0 0 75px;
-}
-/* line 10, ../sass/_portfolio.scss */
 .portfolio_preview {
+  margin-bottom: 20px;
   cursor: pointer;
   position: relative;
   opacity: 1;
   transition: opacity, .2s;
 }
-/* line 11, ../sass/_portfolio.scss */
+/* line 9, ../sass/_portfolio.scss */
 .portfolio_preview img {
   width: 100%;
 }
-/* line 18, ../sass/_portfolio.scss */
+/* line 16, ../sass/_portfolio.scss */
 .portfolio_preview-hover {
   padding: 40% 0 0;
   position: absolute;
@@ -523,20 +505,20 @@ section .section-btn:hover {
   opacity: 1;
   transition: opacity, .2s;
 }
-/* line 28, ../sass/_portfolio.scss */
+/* line 26, ../sass/_portfolio.scss */
 .portfolio_preview-hover .title,
 .portfolio_preview-hover .description {
   margin: 0 auto;
   text-align: center;
   color: #fff;
 }
-/* line 34, ../sass/_portfolio.scss */
+/* line 32, ../sass/_portfolio.scss */
 .portfolio_preview-hover .title {
   font-size: 18px;
   font-family: "BigJohn", sans-serif;
   margin-bottom: 25px;
 }
-/* line 39, ../sass/_portfolio.scss */
+/* line 37, ../sass/_portfolio.scss */
 .portfolio_preview-hover .description {
   position: relative;
   padding: 0 0 30px;
@@ -544,33 +526,26 @@ section .section-btn:hover {
   font-family: "AmbleRegular", sans-serif;
 }
 /* line 45, ../sass/_portfolio.scss */
-.portfolio_preview-hover .description:after {
-  content: "";
-  display: block;
-  position: absolute;
-  left: 43%;
-  bottom: 0;
-  width: 48px;
-  height: 2px;
-  background: #d87843;
-}
-/* line 57, ../sass/_portfolio.scss */
 .portfolio .preview-hidden {
-  opacity: .5;
+  opacity: .4;
   transition: opacity, .5s;
 }
-/* line 61, ../sass/_portfolio.scss */
+/* line 49, ../sass/_portfolio.scss */
+.portfolio .col-xs-12.preview-hidden {
+  display: none;
+}
+/* line 52, ../sass/_portfolio.scss */
 .portfolio .hover-hidden {
   opacity: 0;
   transition: opacity, .4s;
 }
-/* line 65, ../sass/_portfolio.scss */
+/* line 56, ../sass/_portfolio.scss */
 .portfolio_btn {
   font-size: 24px;
   padding: 0 100px;
   line-height: 52px;
 }
-/* line 69, ../sass/_portfolio.scss */
+/* line 60, ../sass/_portfolio.scss */
 .portfolio_btn:hover, .portfolio_btn:active {
   padding: 0 90px;
   background: rgba(34, 34, 34, 0.1);
@@ -642,29 +617,18 @@ section.about-us .team-apply_title {
   position: relative;
   font-family: "BigJohn", sans-serif;
   font-size: 24px;
-  width: 50%;
   margin: 0 auto 40px;
   padding-bottom: 40px;
+  background: url("../img/icons/heading-line-dark.png") center bottom no-repeat;
 }
-/* line 61, ../sass/_about-us.scss */
-section.about-us .team-apply_title:after {
-  content: "";
-  display: block;
-  position: absolute;
-  width: 86px;
-  height: 2px;
-  left: 22%;
-  bottom: 0;
-  background: #222;
-}
-/* line 72, ../sass/_about-us.scss */
+/* line 62, ../sass/_about-us.scss */
 section.about-us .team-apply_btn {
   display: inline-block;
   font-size: 24px;
   line-height: 54px;
   padding: 0 60px;
 }
-/* line 77, ../sass/_about-us.scss */
+/* line 67, ../sass/_about-us.scss */
 section.about-us .team-apply_btn:hover {
   padding: 0 55px;
   background: rgba(34, 34, 34, 0.3);
@@ -714,136 +678,137 @@ footer .footer-copyright a:hover {
   section.about-us .team-apply_description {
     padding-top: 20%;
   }
-  /* line 62, ../sass/_media.scss */
-  section.about-us .team-apply_title {
-    width: 70%;
-  }
 }
 @media only screen and (max-width: 992px) {
-  /* line 71, ../sass/_media.scss */
-  section.light-section h2:after {
-    left: 44%;
-  }
-
-  /* line 74, ../sass/_media.scss */
+  /* line 68, ../sass/_media.scss */
   section.light-section.gray-section li {
     padding-right: 46px;
   }
 
-  /* line 77, ../sass/_media.scss */
+  /* line 71, ../sass/_media.scss */
   section.about-us {
     padding-bottom: 105px;
   }
-  /* line 78, ../sass/_media.scss */
+  /* line 72, ../sass/_media.scss */
   section.about-us .co-worker_hover {
     width: 93%;
     padding-top: 85%;
   }
-  /* line 83, ../sass/_media.scss */
+  /* line 77, ../sass/_media.scss */
   section.about-us .team-worker {
     margin-bottom: 15px;
   }
 
-  /* line 87, ../sass/_media.scss */
+  /* line 81, ../sass/_media.scss */
   .light-section_slider ol.carousel-indicators.slider-indicators {
     bottom: -10%;
   }
 }
 @media only screen and (max-width: 991px) {
-  /* line 94, ../sass/_media.scss */
+  /* line 88, ../sass/_media.scss */
   .light-section .contact-info {
     background: linear-gradient(to top, #e4e4e4 61%, #f2f2f2 49%);
     padding: 120px 0;
   }
-  /* line 97, ../sass/_media.scss */
+  /* line 91, ../sass/_media.scss */
   .light-section .contact-info .our-location {
     margin-bottom: 60px;
     padding-left: 33%;
   }
 }
 @media only screen and (max-width: 950px) {
-  /* line 107, ../sass/_media.scss */
+  /* line 101, ../sass/_media.scss */
   header .main-menu_nav {
     width: 70%;
   }
-  /* line 109, ../sass/_media.scss */
+  /* line 103, ../sass/_media.scss */
   header .main-menu_nav li {
     margin-bottom: 5px;
   }
 }
 @media only screen and (max-width: 900px) {
-  /* line 119, ../sass/_media.scss */
+  /* line 113, ../sass/_media.scss */
   header .main-menu {
     margin-bottom: 180px;
   }
-  /* line 121, ../sass/_media.scss */
+  /* line 115, ../sass/_media.scss */
   header .main-menu_btn {
     left: 49%;
   }
-  /* line 124, ../sass/_media.scss */
+  /* line 118, ../sass/_media.scss */
   header .main-menu_nav {
     margin: 0 auto;
     left: 3%;
     top: 105px;
     transition: opacity .3s;
   }
-  /* line 130, ../sass/_media.scss */
+  /* line 124, ../sass/_media.scss */
   header .main-menu .nav-hidden {
     left: 3%;
     transition: opacity .7s;
   }
-  /* line 135, ../sass/_media.scss */
+  /* line 129, ../sass/_media.scss */
   header h1 {
     font-size: 40px;
     margin-bottom: 30px;
   }
-  /* line 139, ../sass/_media.scss */
+  /* line 133, ../sass/_media.scss */
   header .header-description {
     font-size: 18px;
     width: 66%;
   }
 }
 @media only screen and (max-width: 840px) {
-  /* line 149, ../sass/_media.scss */
+  /* line 143, ../sass/_media.scss */
   header .main-menu_nav {
     width: 40%;
     margin-bottom: -35px;
   }
-  /* line 152, ../sass/_media.scss */
+  /* line 146, ../sass/_media.scss */
   header .main-menu_nav a {
     font-size: 14px;
   }
-  /* line 156, ../sass/_media.scss */
-  header h1:after {
-    left: 42%;
-  }
 }
 @media only screen and (max-width: 767px) {
-  /* line 165, ../sass/_media.scss */
+  /* line 155, ../sass/_media.scss */
+  .portfolio-preview_hover {
+    width: 95.9%;
+  }
+  /* line 157, ../sass/_media.scss */
+  .portfolio-preview_hover .title {
+    font-size: 26px;
+    margin-bottom: 40px;
+  }
+  /* line 161, ../sass/_media.scss */
+  .portfolio-preview_hover .description {
+    left: 46.5%;
+    padding-bottom: 45px;
+  }
+
+  /* line 167, ../sass/_media.scss */
   section.about-us .co-worker_hover {
     width: 96%;
     padding-top: 100%;
   }
-  /* line 168, ../sass/_media.scss */
+  /* line 170, ../sass/_media.scss */
   section.about-us .co-worker_hover .name {
     font-size: 35px;
     margin-bottom: 15px;
   }
-  /* line 172, ../sass/_media.scss */
+  /* line 174, ../sass/_media.scss */
   section.about-us .co-worker_hover .position {
     font-size: 24px;
   }
-  /* line 176, ../sass/_media.scss */
+  /* line 179, ../sass/_media.scss */
+  section.about-us .team-apply_description {
+    padding-top: 35%;
+  }
+  /* line 182, ../sass/_media.scss */
   section.about-us .team-apply_title {
-    width: 30%;
     font-size: 40px;
     margin-bottom: 70px;
   }
-  /* line 180, ../sass/_media.scss */
-  section.about-us .team-apply_title:after {
-    left: 30%;
-  }
-  /* line 184, ../sass/_media.scss */
+  /* line 187, ../sass/_media.scss */
   section.about-us .team-apply_btn {
     font-size: 30px;
     padding: 0 80px;
@@ -851,50 +816,48 @@ footer .footer-copyright a:hover {
   }
 }
 @media only screen and (max-width: 739px) {
-  /* line 199, ../sass/_media.scss */
+  /* line 197, ../sass/_media.scss */
   section.light-section.gray-section li {
     width: 50%;
     margin-bottom: 20px;
     margin-left: 0 !important;
     padding-right: 117px;
   }
-  /* line 204, ../sass/_media.scss */
+  /* line 202, ../sass/_media.scss */
   section.light-section.gray-section li:last-child {
     margin-bottom: 0;
   }
 }
 @media only screen and (max-width: 640px) {
-  /* line 212, ../sass/_media.scss */
+  /* line 210, ../sass/_media.scss */
   section.light-section.gray-section li {
     padding: 0 203px;
     width: 100%;
   }
 }
+@media only screen and (max-width: 681px) {
+  /* line 218, ../sass/_media.scss */
+  .light-section nav a {
+    font-size: 12px;
+    font-family: "BigJohn", sans-serif;
+  }
+}
 @media only screen and (max-width: 600px) {
-  /* line 221, ../sass/_media.scss */
+  /* line 227, ../sass/_media.scss */
   header h1 {
     font-size: 26px;
     padding-bottom: 25px;
   }
-
-  /* line 226, ../sass/_media.scss */
-  section.light-section h2:after {
-    left: 43%;
-  }
 }
 @media only screen and (max-width: 444px) {
-  /* line 234, ../sass/_media.scss */
+  /* line 237, ../sass/_media.scss */
   header .main-menu_nav {
     width: 48%;
   }
 
-  /* line 238, ../sass/_media.scss */
+  /* line 241, ../sass/_media.scss */
   section.light-section h2 {
     font-size: 26px;
-  }
-  /* line 240, ../sass/_media.scss */
-  section.light-section h2:after {
-    left: 41%;
   }
 }
 @media only screen and (max-width: 370px) {

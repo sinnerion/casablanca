@@ -1,3 +1,8 @@
+@import "variables";
+
+body {
+  color: $h2-color;
+}
 .container {
   padding: 0 !important;
 }

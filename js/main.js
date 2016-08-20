@@ -52,4 +52,14 @@ $(document).ready(function(){
             }
         });
     });
+
+    //Form plasceholders
+    $('.js-placeholder').focus(function () {
+        $(this).next('.form-label').addClass('form-label_hidden');
+    });
+    $('.js-placeholder').blur(function () {
+        if(!$(this).val()) {
+            $(this).next('.form-label').removeClass('form-label_hidden');
+        }
+    });
 });

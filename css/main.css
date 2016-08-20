@@ -33,25 +33,30 @@
   font-weight: normal;
   font-style: normal;
 }
-/* line 1, ../sass/_general.scss */
+/* line 3, ../sass/_general.scss */
+body {
+  color: #222;
+}
+
+/* line 6, ../sass/_general.scss */
 .container {
   padding: 0 !important;
 }
 
-/* line 4, ../sass/_general.scss */
+/* line 9, ../sass/_general.scss */
 nav {
   font-size: 0;
 }
-/* line 6, ../sass/_general.scss */
+/* line 11, ../sass/_general.scss */
 nav ul {
   margin: 0;
   display: table;
 }
-/* line 10, ../sass/_general.scss */
+/* line 15, ../sass/_general.scss */
 nav li {
   display: inline-block;
 }
-/* line 13, ../sass/_general.scss */
+/* line 18, ../sass/_general.scss */
 nav a {
   display: block;
 }
@@ -154,62 +159,61 @@ section .section-btn {
   font-family: "AmbleBold", sans-serif;
   background: transparent;
   text-align: center;
-  margin: 0 auto;
   border: 3px solid;
   transition: padding, .2s;
 }
-/* line 11, ../sass/_sections.scss */
+/* line 10, ../sass/_sections.scss */
 section .section-btn:hover {
   transition: padding, .3s;
 }
 
-/* line 17, ../sass/_sections.scss */
+/* line 16, ../sass/_sections.scss */
 .light-section {
   padding: 120px 0;
   background: #fff;
 }
-/* line 20, ../sass/_sections.scss */
+/* line 19, ../sass/_sections.scss */
 .light-section.gray-section {
   background: #f4f4f4;
 }
-/* line 22, ../sass/_sections.scss */
+/* line 21, ../sass/_sections.scss */
 .light-section.gray-section ul {
   display: block;
 }
-/* line 25, ../sass/_sections.scss */
+/* line 24, ../sass/_sections.scss */
 .light-section.gray-section li {
   padding: 0 20px;
   width: 20%;
   margin: 0;
   font-size: 36px;
 }
-/* line 31, ../sass/_sections.scss */
+/* line 30, ../sass/_sections.scss */
 .light-section.gray-section a {
   width: 100%;
   height: 50px;
   background: url("../img/clients.png") no-repeat;
 }
-/* line 35, ../sass/_sections.scss */
+/* line 34, ../sass/_sections.scss */
 .light-section.gray-section a.ggl {
   background-position: 0px 0px;
 }
-/* line 38, ../sass/_sections.scss */
+/* line 37, ../sass/_sections.scss */
 .light-section.gray-section a.sams {
   background-position: -240px 0px;
 }
-/* line 41, ../sass/_sections.scss */
+/* line 40, ../sass/_sections.scss */
 .light-section.gray-section a.flick {
   background-position: -475px 0px;
 }
-/* line 44, ../sass/_sections.scss */
+/* line 43, ../sass/_sections.scss */
 .light-section.gray-section a.frsq {
   background-position: -718px 0px;
 }
-/* line 47, ../sass/_sections.scss */
+/* line 46, ../sass/_sections.scss */
 .light-section.gray-section a.pint {
   background-position: -988px 0px;
 }
-/* line 52, ../sass/_sections.scss */
+/* line 51, ../sass/_sections.scss */
 .light-section h2 {
   font-size: 30px;
   font-family: "BigJohn", sans-serif;
@@ -220,7 +224,7 @@ section .section-btn:hover {
   text-transform: uppercase;
   padding-bottom: 70px;
 }
-/* line 61, ../sass/_sections.scss */
+/* line 60, ../sass/_sections.scss */
 .light-section h2:after {
   display: block;
   content: "";
@@ -231,23 +235,23 @@ section .section-btn:hover {
   bottom: 0;
   background: #222;
 }
-/* line 72, ../sass/_sections.scss */
+/* line 71, ../sass/_sections.scss */
 .light-section nav {
   margin: 0 0 85px;
 }
-/* line 74, ../sass/_sections.scss */
+/* line 73, ../sass/_sections.scss */
 .light-section nav ul {
   margin: 0 auto;
 }
-/* line 77, ../sass/_sections.scss */
+/* line 76, ../sass/_sections.scss */
 .light-section nav li {
   margin-right: 30px;
 }
-/* line 79, ../sass/_sections.scss */
-.light-section nav li li:last-child {
+/* line 78, ../sass/_sections.scss */
+.light-section nav li:last-child {
   margin-right: 0;
 }
-/* line 83, ../sass/_sections.scss */
+/* line 82, ../sass/_sections.scss */
 .light-section nav button {
   background: transparent;
   border: none;
@@ -258,7 +262,7 @@ section .section-btn:hover {
   color: #222;
   text-transform: uppercase;
 }
-/* line 93, ../sass/_sections.scss */
+/* line 92, ../sass/_sections.scss */
 .light-section nav button:hover,
 .light-section nav button:focus,
 .light-section nav button.active-button {
@@ -266,7 +270,7 @@ section .section-btn:hover {
   text-decoration: none;
   font-weight: bold;
 }
-/* line 101, ../sass/_sections.scss */
+/* line 100, ../sass/_sections.scss */
 .light-section .section-description {
   font-size: 22px;
   text-align: center;
@@ -275,8 +279,8 @@ section .section-btn:hover {
   margin: 0 auto;
   width: 55%;
 }
-/* line 109, ../sass/_sections.scss */
-.light-section.advantage-section .section-description {
+/* line 108, ../sass/_sections.scss */
+.light-section.advantage-section .section-description, .light-section.contact-section .section-description {
   margin-bottom: 100px;
 }
 /* line 112, ../sass/_sections.scss */
@@ -319,13 +323,106 @@ section .section-btn:hover {
 .light-section_slider ol.carousel-indicators.slider-indicators li.active {
   background: #d87843;
 }
+/* line 144, ../sass/_sections.scss */
+.light-section .contact-info {
+  background: linear-gradient(to left, #e4e4e4 70%, #f2f2f2 30%);
+  padding: 120px 0;
+}
+/* line 148, ../sass/_sections.scss */
+.light-section .contact-info .our-location_title {
+  font-size: 24px;
+  font-family: "BigJohn", sans-serif;
+  margin-bottom: 40px;
+}
+/* line 153, ../sass/_sections.scss */
+.light-section .contact-info .our-location_description {
+  font-size: 22px;
+  font-family: "AmbleLight", sans-serif;
+  font-style: italic;
+  margin-bottom: 40px;
+}
+/* line 160, ../sass/_sections.scss */
+.light-section .contact-info nav,
+.light-section .contact-info ul {
+  margin: 0;
+}
+/* line 164, ../sass/_sections.scss */
+.light-section .contact-info li {
+  margin-right: 25px;
+}
+/* line 167, ../sass/_sections.scss */
+.light-section .contact-info li a {
+  font-size: 14px;
+  width: 25px;
+  height: 25px;
+  background: url("../img/social-sprite.png") no-repeat;
+}
+/* line 173, ../sass/_sections.scss */
+.light-section .contact-info li a.tw {
+  background-position: 0px 2px;
+}
+/* line 176, ../sass/_sections.scss */
+.light-section .contact-info li a.fb {
+  background-position: 0px -30px;
+}
+/* line 179, ../sass/_sections.scss */
+.light-section .contact-info li a.ln {
+  background-position: 0px -64px;
+}
+/* line 182, ../sass/_sections.scss */
+.light-section .contact-info li a.vm {
+  background-position: 0px -95px;
+}
+/* line 185, ../sass/_sections.scss */
+.light-section .contact-info li a.be {
+  background-position: 0px -123px;
+}
+/* line 190, ../sass/_sections.scss */
+.light-section .contact-form_input {
+  position: relative;
+  margin-bottom: 110px;
+}
+/* line 193, ../sass/_sections.scss */
+.light-section .contact-form_input:last-child {
+  margin-bottom: 0;
+}
+/* line 196, ../sass/_sections.scss */
+.light-section .contact-form_input label,
+.light-section .contact-form_input input[type="text"] {
+  font-size: 18px;
+  font-style: italic;
+  color: #676767;
+  font-family: "AmbleLight", sans-serif;
+}
+/* line 203, ../sass/_sections.scss */
+.light-section .contact-form_input label {
+  position: absolute;
+  left: 30px;
+  top: -10px;
+}
+/* line 208, ../sass/_sections.scss */
+.light-section .contact-form_input .form-label_hidden {
+  opacity: 0;
+  transition: opacity, .2s;
+}
+/* line 213, ../sass/_sections.scss */
+.light-section .contact-form input[type="text"] {
+  width: 100%;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid #676767;
+}
+/* line 218, ../sass/_sections.scss */
+.light-section .contact-form input[type="text"]:focus {
+  outline: none;
+}
 
-/* line 146, ../sass/_sections.scss */
+/* line 225, ../sass/_sections.scss */
 .dark-section {
   text-align: center;
   padding: 200px 0;
 }
-/* line 149, ../sass/_sections.scss */
+/* line 228, ../sass/_sections.scss */
 .dark-section .section-btn {
   position: relative;
   z-index: 10;
@@ -335,24 +432,24 @@ section .section-btn:hover {
   padding: 0 80px;
   border-color: #fff;
 }
-/* line 157, ../sass/_sections.scss */
+/* line 236, ../sass/_sections.scss */
 .dark-section .section-btn:hover {
   background: rgba(255, 255, 255, 0.15);
   padding: 0 70px;
 }
-/* line 162, ../sass/_sections.scss */
+/* line 241, ../sass/_sections.scss */
 .dark-section.video-section {
   padding: 0;
 }
-/* line 164, ../sass/_sections.scss */
+/* line 243, ../sass/_sections.scss */
 .dark-section.video-section iframe {
   width: 100%;
 }
-/* line 168, ../sass/_sections.scss */
+/* line 247, ../sass/_sections.scss */
 .dark-section.section-2, .dark-section.section-4, .dark-section.section-9 {
   position: relative;
 }
-/* line 172, ../sass/_sections.scss */
+/* line 251, ../sass/_sections.scss */
 .dark-section.section-2:after, .dark-section.section-4:after, .dark-section.section-9:after {
   content: "";
   display: block;
@@ -364,15 +461,15 @@ section .section-btn:hover {
   background: rgba(34, 34, 34, 0.6);
   z-index: 2;
 }
-/* line 184, ../sass/_sections.scss */
+/* line 263, ../sass/_sections.scss */
 .dark-section.section-2 {
   background: url("../img/section-bg-2.png") center center no-repeat;
 }
-/* line 187, ../sass/_sections.scss */
+/* line 266, ../sass/_sections.scss */
 .dark-section.section-4 {
   background: url("../img/section-bg-4.png") center center no-repeat;
 }
-/* line 190, ../sass/_sections.scss */
+/* line 269, ../sass/_sections.scss */
 .dark-section.section-9 {
   background: url("../img/section-bg-9.png") center center no-repeat;
 }

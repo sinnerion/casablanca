@@ -5,7 +5,6 @@ section {
     font-family: "AmbleBold", sans-serif;
     background: transparent;
     text-align: center;
-    margin: 0 auto;
     border: 3px solid;
     transition: padding, .2s;
     &:hover {
@@ -76,7 +75,7 @@ section {
     }
     li {
       margin-right: 30px;
-      li:last-child {
+      &:last-child {
         margin-right: 0;
       }
     }
@@ -106,7 +105,8 @@ section {
     margin: 0 auto;
     width: 55%;
   }
-  &.advantage-section .section-description {
+  &.advantage-section .section-description,
+  &.contact-section .section-description {
     margin-bottom: 100px;
   }
   &_slider {
@@ -138,6 +138,85 @@ section {
         &.active {
           background: $accent-color;
         }
+      }
+    }
+  }
+  .contact-info {
+    background: linear-gradient(to left, #e4e4e4 70%, #f2f2f2 30%);
+    padding: 120px 0;
+    .our-location {
+      &_title {
+        font-size: 24px;
+        font-family: "BigJohn", sans-serif;
+        margin-bottom: 40px;
+      }
+      &_description {
+        font-size: 22px;
+        font-family: "AmbleLight", sans-serif;
+        font-style: italic;
+        margin-bottom: 40px;
+      }
+    }
+    nav,
+    ul {
+      margin: 0;
+    }
+    li {
+      margin-right: 25px;
+    }
+    li a {
+      font-size: 14px;
+      width: 25px;
+      height: 25px;
+      background: url("../img/social-sprite.png") no-repeat;
+    }
+    li a.tw {
+      background-position: 0px 2px;
+    }
+    li a.fb {
+      background-position: 0px -30px;
+    }
+    li a.ln {
+      background-position: 0px -64px;
+    }
+    li a.vm {
+      background-position: 0px -95px;
+    }
+    li a.be {
+      background-position: 0px -123px;
+    }
+  }
+  .contact-form {
+    &_input {
+      position: relative;
+      margin-bottom: 110px;
+      &:last-child {
+        margin-bottom: 0;
+      }
+      label,
+      input[type="text"] {
+        font-size: 18px;
+        font-style: italic;
+        color: $contact-txt;
+        font-family: "AmbleLight", sans-serif;
+      }
+      label {
+        position: absolute;
+        left: 30px;
+        top: -10px;
+      }
+      .form-label_hidden {
+        opacity: 0;
+        transition: opacity, .2s;
+      }
+    }
+    input[type="text"] {
+      width: 100%;
+      background: transparent;
+      border: none;
+      border-bottom: 1px solid $contact-txt;
+      &:focus {
+        outline: none;
       }
     }
   }

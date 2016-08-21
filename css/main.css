@@ -39,24 +39,30 @@ body {
 }
 
 /* line 6, ../sass/_general.scss */
+button:active,
+button:focus {
+  outline: none;
+}
+
+/* line 10, ../sass/_general.scss */
 .container {
   padding: 0 !important;
 }
 
-/* line 9, ../sass/_general.scss */
+/* line 13, ../sass/_general.scss */
 nav {
   font-size: 0;
 }
-/* line 11, ../sass/_general.scss */
+/* line 15, ../sass/_general.scss */
 nav ul {
   margin: 0;
   display: table;
 }
-/* line 15, ../sass/_general.scss */
+/* line 19, ../sass/_general.scss */
 nav li {
   display: inline-block;
 }
-/* line 18, ../sass/_general.scss */
+/* line 22, ../sass/_general.scss */
 nav a {
   display: block;
 }
@@ -64,18 +70,19 @@ nav a {
 /* line 2, ../sass/_header.scss */
 header {
   position: relative;
-  padding-bottom: 390px;
+  padding-bottom: 3%;
   background: url("../img/header-bg-1.png") center top no-repeat, url("../img/header-bg-2.png") center top no-repeat, url("../img/header-bg-3.png") center top no-repeat;
+  background-size: cover;
 }
-/* line 8, ../sass/_header.scss */
+/* line 9, ../sass/_header.scss */
 header .container {
   text-align: center;
 }
-/* line 11, ../sass/_header.scss */
+/* line 12, ../sass/_header.scss */
 header .main-menu {
   margin-bottom: 240px;
 }
-/* line 13, ../sass/_header.scss */
+/* line 14, ../sass/_header.scss */
 header .main-menu_btn {
   color: #fff;
   font-size: 24px;
@@ -85,15 +92,15 @@ header .main-menu_btn {
   z-index: 1;
   cursor: pointer;
 }
-/* line 21, ../sass/_header.scss */
+/* line 22, ../sass/_header.scss */
 header .main-menu_btn:active i {
   transform: scale(0.9);
 }
-/* line 24, ../sass/_header.scss */
+/* line 25, ../sass/_header.scss */
 header .main-menu_btn[data-toggle="active"] {
   color: #d9a884;
 }
-/* line 28, ../sass/_header.scss */
+/* line 29, ../sass/_header.scss */
 header .main-menu_nav {
   position: relative;
   left: 80px;
@@ -101,41 +108,41 @@ header .main-menu_nav {
   transition: opacity, left, .3s;
   z-index: 0;
 }
-/* line 35, ../sass/_header.scss */
+/* line 36, ../sass/_header.scss */
 header .main-menu .nav-hidden {
   opacity: 0;
   left: 70px;
   transition: opacity, left, .7s;
 }
-/* line 40, ../sass/_header.scss */
+/* line 41, ../sass/_header.scss */
 header .main-menu li {
   font-size: 14px;
   margin-right: 5px;
 }
-/* line 43, ../sass/_header.scss */
+/* line 44, ../sass/_header.scss */
 header .main-menu li a {
   padding: 0 10px;
   color: #e28843;
   background: #fff;
   border-radius: 3px;
 }
-/* line 49, ../sass/_header.scss */
+/* line 50, ../sass/_header.scss */
 header .main-menu li a:hover,
 header .main-menu li a:focus {
   text-decoration: none;
   transform: scale(0.93);
   transition: transform, .2s;
 }
-/* line 57, ../sass/_header.scss */
+/* line 58, ../sass/_header.scss */
 header .header-description {
   text-align: center;
   color: #fffefe;
   font-size: 22px;
   font-family: 'AmbleRegular', sans-serif;
-  margin: 0 auto 25%;
+  margin: 0 auto 30%;
   width: 50%;
 }
-/* line 65, ../sass/_header.scss */
+/* line 66, ../sass/_header.scss */
 header h1 {
   color: #fff;
   text-transform: uppercase;
@@ -524,28 +531,25 @@ section .section-btn:hover {
   padding: 0 0 30px;
   font-size: 24px;
   font-family: "AmbleRegular", sans-serif;
+  background: url("../img/icons/heading-line-accent.png") center bottom no-repeat;
 }
-/* line 45, ../sass/_portfolio.scss */
+/* line 46, ../sass/_portfolio.scss */
 .portfolio .preview-hidden {
   opacity: .4;
   transition: opacity, .5s;
 }
-/* line 49, ../sass/_portfolio.scss */
-.portfolio .col-xs-12.preview-hidden {
-  display: none;
-}
-/* line 52, ../sass/_portfolio.scss */
+/* line 50, ../sass/_portfolio.scss */
 .portfolio .hover-hidden {
   opacity: 0;
   transition: opacity, .4s;
 }
-/* line 56, ../sass/_portfolio.scss */
+/* line 54, ../sass/_portfolio.scss */
 .portfolio_btn {
   font-size: 24px;
   padding: 0 100px;
   line-height: 52px;
 }
-/* line 60, ../sass/_portfolio.scss */
+/* line 58, ../sass/_portfolio.scss */
 .portfolio_btn:hover, .portfolio_btn:active {
   padding: 0 90px;
   background: rgba(34, 34, 34, 0.1);
@@ -771,44 +775,48 @@ footer .footer-copyright a:hover {
 }
 @media only screen and (max-width: 767px) {
   /* line 155, ../sass/_media.scss */
-  .portfolio-preview_hover {
+  .portfolio_preview-hover {
     width: 95.9%;
   }
   /* line 157, ../sass/_media.scss */
-  .portfolio-preview_hover .title {
+  .portfolio_preview-hover .title {
     font-size: 26px;
     margin-bottom: 40px;
   }
   /* line 161, ../sass/_media.scss */
-  .portfolio-preview_hover .description {
-    left: 46.5%;
+  .portfolio_preview-hover .description {
     padding-bottom: 45px;
   }
 
-  /* line 167, ../sass/_media.scss */
+  /* line 165, ../sass/_media.scss */
+  .preview-hidden {
+    display: none;
+  }
+
+  /* line 169, ../sass/_media.scss */
   section.about-us .co-worker_hover {
     width: 96%;
     padding-top: 100%;
   }
-  /* line 170, ../sass/_media.scss */
+  /* line 172, ../sass/_media.scss */
   section.about-us .co-worker_hover .name {
     font-size: 35px;
     margin-bottom: 15px;
   }
-  /* line 174, ../sass/_media.scss */
+  /* line 176, ../sass/_media.scss */
   section.about-us .co-worker_hover .position {
     font-size: 24px;
   }
-  /* line 179, ../sass/_media.scss */
+  /* line 181, ../sass/_media.scss */
   section.about-us .team-apply_description {
     padding-top: 35%;
   }
-  /* line 182, ../sass/_media.scss */
+  /* line 184, ../sass/_media.scss */
   section.about-us .team-apply_title {
     font-size: 40px;
     margin-bottom: 70px;
   }
-  /* line 187, ../sass/_media.scss */
+  /* line 189, ../sass/_media.scss */
   section.about-us .team-apply_btn {
     font-size: 30px;
     padding: 0 80px;
@@ -816,61 +824,101 @@ footer .footer-copyright a:hover {
   }
 }
 @media only screen and (max-width: 739px) {
-  /* line 197, ../sass/_media.scss */
+  /* line 199, ../sass/_media.scss */
   section.light-section.gray-section li {
     width: 50%;
     margin-bottom: 20px;
     margin-left: 0 !important;
     padding-right: 117px;
   }
-  /* line 202, ../sass/_media.scss */
+  /* line 204, ../sass/_media.scss */
   section.light-section.gray-section li:last-child {
     margin-bottom: 0;
   }
 }
 @media only screen and (max-width: 640px) {
-  /* line 210, ../sass/_media.scss */
+  /* line 212, ../sass/_media.scss */
   section.light-section.gray-section li {
     padding: 0 203px;
     width: 100%;
   }
 }
 @media only screen and (max-width: 681px) {
-  /* line 218, ../sass/_media.scss */
+  /* line 220, ../sass/_media.scss */
   .light-section nav a {
     font-size: 12px;
     font-family: "BigJohn", sans-serif;
   }
 }
 @media only screen and (max-width: 600px) {
-  /* line 227, ../sass/_media.scss */
+  /* line 229, ../sass/_media.scss */
   header h1 {
     font-size: 26px;
     padding-bottom: 25px;
   }
 }
+@media only screen and (max-width: 500px) {
+  /* line 238, ../sass/_media.scss */
+  section.about-us .co-worker_hover {
+    width: 95%;
+    padding-top: 90%;
+  }
+  /* line 241, ../sass/_media.scss */
+  section.about-us .co-worker_hover .name {
+    font-size: 30px;
+  }
+  /* line 244, ../sass/_media.scss */
+  section.about-us .co-worker_hover .position {
+    font-size: 20px;
+  }
+}
 @media only screen and (max-width: 444px) {
-  /* line 237, ../sass/_media.scss */
+  /* line 253, ../sass/_media.scss */
   header .main-menu_nav {
     width: 48%;
   }
 
-  /* line 241, ../sass/_media.scss */
+  /* line 257, ../sass/_media.scss */
+  .dark-section .section-btn {
+    font-size: 26px;
+    line-height: 75px;
+    padding: 0 40px;
+  }
+
+  /* line 262, ../sass/_media.scss */
   section.light-section h2 {
     font-size: 26px;
   }
+
+  /* line 265, ../sass/_media.scss */
+  section.light-section .contact-info .our-location {
+    padding-left: 20%;
+  }
+
+  /* line 268, ../sass/_media.scss */
+  section.about-us .co-worker_hover {
+    width: 94%;
+  }
+}
+@media only screen and (max-width: 400px) {
+  /* line 275, ../sass/_media.scss */
+  section.about-us .co-worker_hover {
+    width: 93%;
+  }
+
+  /* line 278, ../sass/_media.scss */
+  section .portfolio .section-btn.portfolio_btn {
+    font-size: 20px;
+    padding: 0 40px;
+  }
+  /* line 281, ../sass/_media.scss */
+  section .portfolio .section-btn.portfolio_btn:hover {
+    padding: 0 35px;
+  }
 }
 @media only screen and (max-width: 370px) {
-  /* line 249, ../sass/_media.scss */
+  /* line 290, ../sass/_media.scss */
   header .main-menu_nav {
     width: 56%;
   }
-}
-/* Desktops and laptops ----------- */
-@media only screen and (min-width: 1224px) {
-  /* Styles */
-}
-/* Large screens ----------- */
-@media only screen and (min-width: 1824px) {
-  /* Styles */
 }

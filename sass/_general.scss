@@ -3,6 +3,10 @@
 body {
   color: $h2-color;
 }
+button:active,
+button:focus {
+  outline: none;
+}
 .container {
   padding: 0 !important;
 }

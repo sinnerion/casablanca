@@ -39,15 +39,13 @@
         padding: 0 0 30px;
         font-size: 24px;
         font-family: "AmbleRegular", sans-serif;
+        background: url("../img/icons/heading-line-accent.png") center bottom no-repeat;
       }
     }
   }
   .preview-hidden {
     opacity: .4;
     transition: opacity, .5s;
-  }
-  .col-xs-12.preview-hidden {
-    display: none;
   }
   .hover-hidden {
     opacity: 0;

@@ -152,16 +152,18 @@ and (max-width : 840px) {
 
 @media only screen
 and (max-width : 767px) {
-  .portfolio-preview_hover {
+  .portfolio_preview-hover {
     width: 95.9%;
     .title {
       font-size: 26px;
       margin-bottom: 40px;
     }
     .description {
-      left: 46.5%;
       padding-bottom: 45px;
     }
+  }
+  .preview-hidden {
+    display: none;
   }
   section.about-us {
     .co-worker_hover {
@@ -232,14 +234,53 @@ and (max-width : 600px) {
 }
 
 @media only screen
+and (max-width : 500px) {
+  section.about-us .co-worker_hover {
+    width: 95%;
+    padding-top: 90%;
+    .name {
+      font-size: 30px;
+    }
+    .position {
+      font-size: 20px;
+    }
+  }
+}
+
+@media only screen
 and (max-width : 444px) {
   header {
     .main-menu_nav {
       width: 48%;
     }
   }
+  .dark-section .section-btn {
+    font-size: 26px;
+    line-height: 75px;
+    padding: 0 40px;
+  }
   section.light-section h2 {
     font-size: 26px;
+  }
+  section.light-section .contact-info .our-location {
+    padding-left: 20%;
+  }
+  section.about-us .co-worker_hover {
+    width: 94%;
+  }
+}
+
+@media only screen
+and (max-width : 400px) {
+  section.about-us .co-worker_hover {
+    width: 93%;
+  }
+  section .portfolio .section-btn.portfolio_btn {
+    font-size: 20px;
+    padding: 0 40px;
+    &:hover {
+      padding: 0 35px;
+    }
   }
 }
 
@@ -252,14 +293,14 @@ and (max-width : 370px) {
   }
 }
 
-/* Desktops and laptops ----------- */
-@media only screen
-and (min-width : 1224px) {
-  /* Styles */
-}
-
-/* Large screens ----------- */
-@media only screen
-and (min-width : 1824px) {
-  /* Styles */
-}
+///* Desktops and laptops ----------- */
+//@media only screen
+//and (min-width : 1224px) {
+//  /* Styles */
+//}
+//
+///* Large screens ----------- */
+//@media only screen
+//and (min-width : 1824px) {
+//  /* Styles */
+//}
